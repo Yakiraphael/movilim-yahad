@@ -41,7 +41,8 @@ export default function HeroSection() {
           />
         </motion.div>
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-l from-primary/98 via-primary/92 to-primary/85 z-10" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50 z-10" />
 
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
@@ -53,30 +54,30 @@ export default function HeroSection() {
         >
           {/* Logo removed from hero — moved to navbar only */}
 
-          <div className="inline-block bg-white/15 backdrop-blur-md border border-white/30 rounded-full px-4 py-1.5 mb-6 shadow-lg">
-            <span className="text-white font-medium text-sm drop-shadow-md">ע"ר 580795821 | פורום מנהיגות ארצי</span>
+          <div className="inline-block bg-black/40 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6 shadow-lg">
+            <span className="text-white font-medium text-sm" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.8)" }}>ע"ר 580795821 | פורום מנהיגות ארצי</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.5)" }}>
             מובילים יחד:
             <br />
-            <span className="text-secondary">מצמיחים את מנהיגי המחר</span>
+            <span className="text-green-400">מצמיחים את מנהיגי המחר</span>
             <br />
             במרחב הציבורי והפוליטי
           </h1>
 
-          <p className="text-lg md:text-xl text-white drop-shadow-md leading-relaxed mb-10 max-w-2xl">
+          <p className="text-lg md:text-xl text-white leading-relaxed mb-10 max-w-2xl" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.8)" }}>
             פלטפורמה עצמאית להעצמת צעירים וצעירות אקדמאים יוצאי אתיופיה לתפקידי מפתח במנהיגות ציבורית, מוניציפלית ופוליטית בישראל. מובילים יחד — להוביל, להשפיע, להצליח.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <Link to="/about">
-              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold text-base px-8 py-6 rounded-xl shadow-lg shadow-secondary/25">
+              <Button size="lg" className="bg-green-500 text-white hover:bg-green-600 font-bold text-base px-8 py-6 rounded-xl shadow-xl" style={{ boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}>
                 הכירו את הפורום
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold text-base px-8 py-6 rounded-xl">
+              <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 font-bold text-base px-8 py-6 rounded-xl shadow-xl" style={{ boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}>
                 הצטרפו לתוכנית
               </Button>
             </Link>
