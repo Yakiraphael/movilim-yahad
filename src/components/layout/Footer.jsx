@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-12 mb-4 brightness-200" />
+            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-12 mb-4" style={{ mixBlendMode: "screen", filter: "brightness(1.8) drop-shadow(0 0 8px rgba(197,165,90,0.4))" }} />
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               פורום מובילים יחד (ע"ר 580795821) — פלטפורמה עצמאית להעצמת מנהיגות ציבורית ופוליטית של צעירים וצעירות יוצאי אתיופיה בישראל.
             </p>

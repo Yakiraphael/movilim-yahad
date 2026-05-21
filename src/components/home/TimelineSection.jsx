@@ -1,87 +1,150 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const IMAGES = {
-  founding: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/b698a9def_generated_b9e299d8.png",
-  knesset: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/5c436b38f_generated_b187613f.png",
-  social: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/82dcd5c23_generated_bb568299.png",
-  leadership: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f3afe8448_generated_27994a75.png",
-  future: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/df171bbd9_generated_2d148180.png",
-};
-
+// Real photos grouped per timeline station
 const timelineItems = [
   {
     year: "2024",
     title: "הקמת הפורום ורישום רשמי",
     subtitle: "מעלים הילוך: מקימים בית למנהיגות",
-    content: "חבירתם של אקטיביסטים, מנהיגים צעירים ואנשי עשייה מבני הקהילה בראשות אברהם (אבי) יצחק להתאגדות רשמית כעמותה (ע\"ר 580795821). המטרה: יצירת פלטפורמה אקדמית ובלתי תלויה שתעצים מנהיגות מקצועית.",
-    image: IMAGES.founding,
-    imageAlt: "ישיבת הייסוד של פורום מובילים יחד",
+    content: "חבירתם של אקטיביסטים, מנהיגים צעירים ואנשי עשייה מבני הקהילה בראשות אברהם (אבי) יצחק להתאגדות רשמית כעמותה (ע\"ר 580795821). המטרה: יצירת פלטפורמה אקדמית ובלתי תלויה שתעצים מנהיגות מקצועית ותסייע לצעירים להיכנס לתוך תחומי פעילות במרחב הציבורי והפוליטי.",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "ישיבת ייסוד הפורום" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/35ae1e064_1492023-9635.jpg", alt: "חברי מייסדים" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f37d9dd69_-8675.jpg", alt: "ישיבת הייסוד" },
+    ],
   },
   {
     year: "2024",
     title: "כניסה לזירה הפרלמנטרית",
     subtitle: "משפיעים מתוך מוקדי קבלת ההחלטות",
-    content: "תחילת פעילות אינטנסיבית בוועדות הכנסת השונות. הפורום הופך לקול המקצועי והמפקח על החלטות הממשלה בנושא ייצוג הולם לבני הקהילה בשירות המדינה, בחברות ממשלתיות ובתאגידים ציבוריים.",
-    image: IMAGES.knesset,
-    imageAlt: "נציגי הפורום בדיונים בוועדות הכנסת",
+    content: "תחילת פעילות אינטנסיבית בוועדות הכנסת השונות. הפורום הופך לקול המקצועי המפקח על החלטות הממשלה בנושא ייצוג הולם לבני הקהילה בשירות המדינה, בחברות ממשלתיות ובתאגידים ציבוריים. הפורום מסייע בגיבוש ובניית החזון והמטרות של מועמדים ציבוריים.",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg", alt: "ועדת העלייה והקליטה - כנסת" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/8a86a793d_WhatsAppImage2024-04-01at102551.jpg", alt: "פגישה פרלמנטרית" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0c7703618_WhatsAppImage2024-04-03at15157PM.jpg", alt: "ישיבה מקצועית" },
+    ],
+  },
+  {
+    year: "2024",
+    title: "בחירות מוניציפליות ולאומיות",
+    subtitle: "מניעים שינוי מהשטח",
+    content: "הפורום מסייע למועמדים בחירות מקומיות וארציות, מחזק יכולות מנהיגותיות, ומלווה מתמודדים בקבלת החלטות ומיומנויות ניהוליות. שיתוף פעולה עם מנהיגים פוליטיים ובניית גשרים בין הקהילה לממסד.",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fde4b8314_WhatsAppImage2024-03-26at112521PM.jpg", alt: "קמפיין בחירות" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/6488707f7_WhatsAppImage2024-03-26at112733PM.jpg", alt: "בחירות מוניציפליות" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/45c2f9bfe_WhatsAppImage2024-03-28at83135PM.jpg", alt: "תמיכה במועמד" },
+    ],
+  },
+  {
+    year: "2024",
+    title: "סדנאות מנהיגות ופיתוח מקצועי",
+    subtitle: "מחזקים כישורים, מעצימים אנשים",
+    content: "הפורום מעניק הכשרות מעמיקות בתחומים: ניהול משא ומתן, מיומנויות תקשורת, התמצאות במדיה חברתית, פתרון בעיות וחשיבה אסטרטגית. כל אלה כדי לחזק מתמודדים עתידיים הצומחים מהשטח.",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7ed506407_WhatsAppImage2024-04-01at092338.jpg", alt: "סדנת מנהיגות" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3b90d53e7_WhatsAppImage2024-04-01at092926.jpg", alt: "פגישה מקצועית" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d6e89d055_WhatsAppImage2024-04-01at102704.jpg", alt: "הצגת חזון" },
+    ],
   },
   {
     year: "2025",
     title: "עמידה בחזית המאבקים החברתיים",
     subtitle: "צדק חברתי, חוסן קהילתי וערבות הדדית",
     content: "הקמת חמ\"ל סיוע קהילתי וצוותי פעולה להתמודדות עם עוולות חברתיות ומשברים. מפתח ליווי שוטף למשפחות ואוכלוסיות מוחלשות, והשתתפות במאבק הציבורי והתקשורתי הלאומי לחיפוש ואיתור הילדה הנעדרת היימנוט קסאו.",
-    image: IMAGES.social,
-    imageAlt: "פעילות שטח של הפורום למען הקהילה",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/41beadb4c_ChatGPTImageMay15202601_28_58PM.png", alt: "חמ\"ל פורום - ערבות הדדית" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5416f513_WhatsAppImage2025-10-04at2336361.jpg", alt: "פעילות קהילתית 2025" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/06621f912_WhatsAppImage2024-04-01at102735.jpg", alt: "כינוס הפורום" },
+    ],
   },
   {
     year: "2026",
     title: "מיסוד חממת המנהיגות והלובינג",
     subtitle: "שינוי הנרטיב הלאומי",
     content: "הרחבת מערכי ההכשרה והסימולציות למתמודדים במגזר הציבורי ובזירה המוניציפלית/ארצית. מיסוד שיתופי פעולה עם אנשי תקשורת מובילים לצורך שיפור תפיסת הקהילה בציבוריות הישראלית, וכתיבת מסמכי מדיניות וטורי דעה משפיעים.",
-    image: IMAGES.leadership,
-    imageAlt: "סדנת מנהיגות מקצועית של הפורום",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/955f85946_SE02-8557-.jpg", alt: "קבלת הוקרה" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2d6b44775_SE02-8515-.jpg", alt: "אירוע הוקרה" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/1b5d8235b_WhatsAppImage2024-04-01at102736AM.jpg", alt: "חלוקת פרסים" },
+    ],
   },
   {
     year: "העתיד שלנו",
     title: "צמיחה ופריסה לאומית",
     subtitle: "מובילים את מנהיגי המחר",
-    content: "הקמת והנגשת תוכנית \"מנהיגות צעירה\" לנוער ברחבי הארץ, פיתוח לובינג פרלמנטרי ייעודי בכנסת, והרחבת תוכניות החוסן המנטלי והזהות הקהילתית כבר מהגיל הרך – כדי להבטיח את הדורות הבאים של מובילים ציוניים ופטריוטיים.",
-    image: IMAGES.future,
-    imageAlt: "מחזור חגיגי של צעירי הפורום",
+    content: "הקמת תוכנית \"מנהיגות צעירה\" לנוער ברחבי הארץ, פיתוח לובינג פרלמנטרי ייעודי בכנסת, והרחבת תוכניות החוסן המנטלי והזהות הקהילתית כבר מהגיל הרך — כדי להבטיח את הדורות הבאים של מובילים ציוניים ופטריוטיים.",
+    images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/50de62eae_FB_IMG_1720981023126.jpg", alt: "עתיד הפורום" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/26b52baf9_FB_IMG_1718701193825.jpg", alt: "קהילה צעירה" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "דור ההמשך" },
+    ],
   },
 ];
 
+function ImageSlider({ images }) {
+  const [current, setCurrent] = React.useState(0);
+  return (
+    <div className="relative aspect-video rounded-xl overflow-hidden bg-muted">
+      <img
+        src={images[current].url}
+        alt={images[current].alt}
+        className="w-full h-full object-cover transition-all duration-500"
+      />
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={() => setCurrent((c) => (c - 1 + images.length) % images.length)}
+            className="absolute top-1/2 right-2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/60 flex items-center justify-center text-white transition-colors"
+            aria-label="תמונה קודמת"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => setCurrent((c) => (c + 1) % images.length)}
+            className="absolute top-1/2 left-2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/60 flex items-center justify-center text-white transition-colors"
+            aria-label="תמונה הבאה"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-white" : "bg-white/40"}`}
+                aria-label={`עבור לתמונה ${i + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 function TimelineItem({ item, index }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
   const isEven = index % 2 === 0;
 
   return (
-    <div ref={ref} className="relative flex flex-col md:flex-row items-center gap-8 mb-16 last:mb-0">
-      {/* Timeline line and dot */}
-      <div className="hidden md:flex absolute top-0 bottom-0 right-1/2 transform translate-x-1/2 flex-col items-center">
-        <div className={`w-4 h-4 rounded-full border-4 z-10 transition-colors duration-500 ${isInView ? "bg-secondary border-secondary" : "bg-muted border-border"}`} />
-        {index < timelineItems.length - 1 && (
-          <div className="w-0.5 flex-1 bg-border" />
-        )}
+    <div ref={ref} className="relative flex flex-col md:flex-row items-start gap-8 mb-16 last:mb-0">
+      {/* Dot */}
+      <div className="hidden md:block absolute top-6 right-1/2 translate-x-1/2 z-10">
+        <div className={`w-5 h-5 rounded-full border-4 transition-all duration-700 ${isInView ? "bg-secondary border-secondary shadow-lg shadow-secondary/30" : "bg-muted border-border"}`} />
       </div>
 
-      {/* Content */}
+      {/* Content — alternates sides */}
       <motion.div
-        initial={{ opacity: 0, x: isEven ? 50 : -50 }}
+        initial={{ opacity: 0, x: isEven ? 60 : -60 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`w-full md:w-[45%] ${isEven ? "md:mr-auto md:pl-8" : "md:ml-auto md:pr-8"}`}
+        transition={{ duration: 0.65, ease: "easeOut" }}
+        className={`w-full md:w-[46%] ${isEven ? "md:mr-auto" : "md:ml-auto"}`}
       >
         <div className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-lg transition-shadow duration-300">
-          <div className="aspect-video overflow-hidden">
-            <img
-              src={item.image}
-              alt={item.imageAlt}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-            />
-          </div>
+          <ImageSlider images={item.images} />
           <div className="p-6">
             <div className="inline-block bg-secondary/10 text-secondary rounded-full px-3 py-1 text-sm font-bold mb-3">
               {item.year}
@@ -110,9 +173,7 @@ export default function TimelineSection() {
         </div>
 
         <div className="relative">
-          {/* Vertical line */}
-          <div className="hidden md:block absolute top-0 bottom-0 right-1/2 transform translate-x-1/2 w-0.5 bg-border" />
-
+          <div className="hidden md:block absolute top-0 bottom-0 right-1/2 translate-x-1/2 w-0.5 bg-border" />
           {timelineItems.map((item, index) => (
             <TimelineItem key={index} item={item} index={index} />
           ))}
