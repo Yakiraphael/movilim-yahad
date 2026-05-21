@@ -41,7 +41,7 @@ export default function HeroSection() {
           />
         </motion.div>
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-l from-primary/92 via-primary/78 to-primary/55 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-l from-primary/96 via-primary/88 to-primary/72 z-10" />
 
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
@@ -51,15 +51,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          {/* Logo visible on hero — transparent bg */}
-          <div className="mb-8">
-            <img
-              src={LOGO_URL}
-              alt="פורום מובילים יחד"
-              className="h-20 md:h-28 w-auto object-contain drop-shadow-2xl"
-              style={{ mixBlendMode: "screen", filter: "brightness(1.3) drop-shadow(0 0 12px rgba(197,165,90,0.6))" }}
-            />
-          </div>
+          {/* Logo removed from hero — moved to navbar only */}
 
           <div className="inline-block bg-secondary/20 backdrop-blur-sm border border-secondary/30 rounded-full px-4 py-1.5 mb-6">
             <span className="text-secondary text-sm font-medium">ע"ר 580795821 | פורום מנהיגות ארצי</span>

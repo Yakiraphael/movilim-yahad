@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Linkedin, Instagram, Phone } from "lucide-react";
+import GuideStarBanner from "../shared/GuideStarBanner";
 
-const LOGO_URL = "https://media.base44.com/images/public/user_68c7b2fde08fc5feb083ff75/5e8dd2737_.jpg";
+const LOGO_URL = "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/b2d3a44a1_OIP-removebg-preview.png";
 
 const regulatoryLinks = [
   { label: "תעודת רישום עמותה", href: "#" },
@@ -23,13 +24,15 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground" role="contentinfo">
+    <>
+      <GuideStarBanner />
+      <footer className="bg-primary text-primary-foreground" role="contentinfo">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-12 mb-4" style={{ mixBlendMode: "screen", filter: "brightness(1.8) drop-shadow(0 0 8px rgba(197,165,90,0.4))" }} />
+            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-12 mb-4 w-auto" />
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               פורום מובילים יחד (ע"ר 580795821) — פלטפורמה עצמאית להעצמת מנהיגות ציבורית ופוליטית של צעירים וצעירות יוצאי אתיופיה בישראל.
             </p>
@@ -92,5 +95,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

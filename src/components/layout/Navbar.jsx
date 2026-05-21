@@ -4,8 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LOGO_URL = "https://media.base44.com/images/public/user_68c7b2fde08fc5feb083ff75/5e8dd2737_.jpg";
-// Use mix-blend-mode:multiply + transparent background to remove white logo background
+const LOGO_URL = "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/b2d3a44a1_OIP-removebg-preview.png";
 
 const navLinks = [
   { label: "דף הבית", path: "/" },
@@ -46,7 +45,6 @@ export default function Navbar() {
               src={LOGO_URL}
               alt="לוגו פורום מובילים יחד"
               className="h-10 md:h-14 w-auto object-contain"
-              style={{ mixBlendMode: "screen", filter: "brightness(1.5) drop-shadow(0 0 6px rgba(197,165,90,0.5))" }}
             />
           </Link>
 
