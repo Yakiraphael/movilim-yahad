@@ -41,7 +41,7 @@ export default function HeroSection() {
           />
         </motion.div>
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-l from-primary/96 via-primary/88 to-primary/72 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-l from-primary/98 via-primary/92 to-primary/85 z-10" />
 
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
@@ -53,11 +53,11 @@ export default function HeroSection() {
         >
           {/* Logo removed from hero — moved to navbar only */}
 
-          <div className="inline-block bg-secondary/20 backdrop-blur-sm border border-secondary/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-secondary text-sm font-medium">ע"ר 580795821 | פורום מנהיגות ארצי</span>
+          <div className="inline-block bg-white/15 backdrop-blur-md border border-white/30 rounded-full px-4 py-1.5 mb-6 shadow-lg">
+            <span className="text-white font-medium text-sm drop-shadow-md">ע"ר 580795821 | פורום מנהיגות ארצי</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg leading-tight mb-6">
             מובילים יחד:
             <br />
             <span className="text-secondary">מצמיחים את מנהיגי המחר</span>
@@ -65,7 +65,7 @@ export default function HeroSection() {
             במרחב הציבורי והפוליטי
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
+          <p className="text-lg md:text-xl text-white drop-shadow-md leading-relaxed mb-10 max-w-2xl">
             פלטפורמה עצמאית להעצמת צעירים וצעירות אקדמאים יוצאי אתיופיה לתפקידי מפתח במנהיגות ציבורית, מוניציפלית ופוליטית בישראל. מובילים יחד — להוביל, להשפיע, להצליח.
           </p>
 
