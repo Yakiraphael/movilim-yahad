@@ -54,7 +54,7 @@ export default function HeroSection() {
           
           {/* Logo — visible and larger on mobile */}
           <div className="flex justify-start mb-6 md:hidden">
-            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-20 w-auto object-contain drop-shadow-xl hidden" />
+            
           </div>
 
           <div className="inline-block bg-black/40 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6 shadow-lg">
