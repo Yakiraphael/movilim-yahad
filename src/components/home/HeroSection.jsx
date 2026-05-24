@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const LOGO_URL = "https://media.base44.com/images/public/user_68c7b2fde08fc5feb083ff75/5e8dd2737_.jpg";
 
 const heroImages = [
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4301f8ad2_generated_image.png", alt: "תמונת פתיחה - פורום מובילים יחד" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2a507cbc3_DSC_4236JPG.jpg", alt: "ישיבת פורום" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e978e12d7_DSC_4424.jpg", alt: "אירוע הפורום" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg", alt: "ועדת כנסת" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/955f85946_SE02-8557-.jpg", alt: "טקס הוקרה" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/50de62eae_FB_IMG_1720981023126.jpg", alt: "כינוס הפורום" },
 ];
 
 export default function HeroSection() {
@@ -52,7 +52,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          {/* Logo removed from hero — moved to navbar only */}
+          {/* Logo — visible and larger on mobile */}
+          <div className="flex justify-start mb-6 md:hidden">
+            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-20 w-auto object-contain drop-shadow-xl" />
+          </div>
 
           <div className="inline-block bg-black/40 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6 shadow-lg">
             <span className="text-white font-medium text-sm" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.8)" }}>ע"ר 580795821 | פורום מנהיגות ארצי</span>
@@ -72,12 +75,12 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap gap-4">
             <Link to="/about">
-              <Button size="lg" className="bg-green-500 text-white hover:bg-green-600 font-bold text-base px-8 py-6 rounded-xl shadow-xl" style={{ boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}>
+              <Button size="lg" className="bg-green-700 text-white hover:bg-green-800 font-bold text-base px-8 py-6 rounded-xl shadow-xl" style={{ boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}>
                 הכירו את הפורום
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 font-bold text-base px-8 py-6 rounded-xl shadow-xl" style={{ boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}>
+              <Button size="lg" className="bg-blue-800 text-white hover:bg-blue-900 font-bold text-base px-8 py-6 rounded-xl shadow-xl" style={{ boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}>
                 הצטרפו לתוכנית
               </Button>
             </Link>

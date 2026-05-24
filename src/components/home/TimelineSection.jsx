@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// Real photos grouped per timeline station
+// Photos — each image appears only once, distributed across relevant timeline stations
 const timelineItems = [
   {
     year: "2024",
@@ -76,9 +76,8 @@ const timelineItems = [
     subtitle: "מובילים את מנהיגי המחר",
     content: "הקמת תוכנית \"מנהיגות צעירה\" לנוער ברחבי הארץ, פיתוח לובינג פרלמנטרי ייעודי בכנסת, והרחבת תוכניות החוסן המנטלי והזהות הקהילתית כבר מהגיל הרך — כדי להבטיח את הדורות הבאים של מובילים ציוניים ופטריוטיים.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/50de62eae_FB_IMG_1720981023126.jpg", alt: "עתיד הפורום" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/26b52baf9_FB_IMG_1718701193825.jpg", alt: "קהילה צעירה" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "דור ההמשך" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4301f8ad2_generated_image.png", alt: "חזון עתידי - מנהיגות ישראלית" },
     ],
   },
 ];
