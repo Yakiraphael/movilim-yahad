@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const LOGO_URL = "https://media.base44.com/images/public/user_68c7b2fde08fc5feb083ff75/5e8dd2737_.jpg";
 
 const heroImages = [
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/da99292b6_generated_image.png", alt: "קבוצת מנהיגים - פורום מובילים יחד" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3bf613fa3_generated_image.png", alt: "נשות מנהיגות - פורום מובילים יחד" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f04ae6c26_generated_image.png", alt: "ישיבת מנהיגות - פורום מובילים יחד" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2a507cbc3_DSC_4236JPG.jpg", alt: "ישיבת פורום" },
-];
+{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/da99292b6_generated_image.png", alt: "קבוצת מנהיגים - פורום מובילים יחד" },
+{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3bf613fa3_generated_image.png", alt: "נשות מנהיגות - פורום מובילים יחד" },
+{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f04ae6c26_generated_image.png", alt: "ישיבת מנהיגות - פורום מובילים יחד" },
+{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2a507cbc3_DSC_4236JPG.jpg", alt: "ישיבת פורום" }];
+
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -32,13 +32,13 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2 }}
-          className="absolute inset-0"
-        >
+          className="absolute inset-0">
+          
           <img
             src={heroImages[currentImage].url}
             alt={heroImages[currentImage].alt}
-            className="w-full h-full object-cover"
-          />
+            className="w-full h-full object-cover" />
+          
         </motion.div>
       </AnimatePresence>
       {/* Dark overlay for text readability */}
@@ -50,11 +50,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl"
-        >
+          className="max-w-3xl">
+          
           {/* Logo — visible and larger on mobile */}
           <div className="flex justify-start mb-6 md:hidden">
-            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-20 w-auto object-contain drop-shadow-xl" />
+            <img src={LOGO_URL} alt="לוגו פורום מובילים יחד" className="h-20 w-auto object-contain drop-shadow-xl hidden" />
           </div>
 
           <div className="inline-block bg-black/40 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6 shadow-lg">
@@ -88,19 +88,19 @@ export default function HeroSection() {
 
           {/* Carousel dots */}
           <div className="flex gap-2 mt-8">
-            {heroImages.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentImage(i)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${i === currentImage ? "w-8 bg-secondary" : "w-4 bg-white/30"}`}
-                aria-label={`תמונה ${i + 1}`}
-              />
-            ))}
+            {heroImages.map((_, i) =>
+            <button
+              key={i}
+              onClick={() => setCurrentImage(i)}
+              className={`h-1.5 rounded-full transition-all duration-300 ${i === currentImage ? "w-8 bg-secondary" : "w-4 bg-white/30"}`}
+              aria-label={`תמונה ${i + 1}`} />
+
+            )}
           </div>
         </motion.div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20" />
-    </section>
-  );
+    </section>);
+
 }
