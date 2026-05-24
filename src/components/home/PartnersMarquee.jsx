@@ -3,78 +3,79 @@ import React from "react";
 const partners = [
   {
     name: "משרד העלייה והקליטה",
-    logo: "https://upload.wikimedia.org/wikipedia/he/thumb/3/3a/Ministry_of_Aliyah_and_Integration.svg/200px-Ministry_of_Aliyah_and_Integration.svg.png",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4387daf25____-_.png",
   },
   {
-    name: "משרד ראש הממשלה",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Emblem_of_Israel.svg/120px-Emblem_of_Israel.svg.png",
+    name: "ג'וינט ישראל",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/64a59de3b_logo-print.png",
+  },
+  {
+    name: "המכון הישראלי לדמוקרטיה",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/5990169dd_logo-newer.svg",
+  },
+  {
+    name: "הקרן החדשה לישראל",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/1490c10eb_nl2.jpg",
+  },
+  {
+    name: "עמותת פידל",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/00e34bf68_logo-mob.svg",
   },
   {
     name: "הסוכנות היהודית",
     logo: "https://upload.wikimedia.org/wikipedia/he/thumb/4/47/Jewish_Agency_for_Israel_logo.svg/200px-Jewish_Agency_for_Israel_logo.svg.png",
   },
   {
-    name: "ג'וינט ישראל",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/JDC_logo.svg/200px-JDC_logo.svg.png",
-  },
-  {
     name: "קרן קרב",
     logo: "https://www.kerenkarev.org.il/wp-content/uploads/2020/10/logo.png",
   },
   {
-    name: "עמותת פידל",
-    logo: "https://fidel.org.il/wp-content/uploads/2021/03/fidel-logo.png",
-  },
-  {
-    name: "המכון למדיניות העם היהודי",
-    logo: "https://jppi.org.il/wp-content/uploads/2018/04/jppi-logo.png",
-  },
-  {
-    name: "קרן גנדלר",
-    logo: "https://www.gandyrfoundation.org/wp-content/uploads/2020/01/gandyr-logo.png",
-  },
-  {
-    name: "הקרן החדשה לישראל",
-    logo: "https://www.nif.org/wp-content/uploads/2017/01/nif-logo-he.png",
+    name: "משרד ראש הממשלה",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Emblem_of_Israel.svg/120px-Emblem_of_Israel.svg.png",
   },
 ];
 
 export default function PartnersMarquee() {
   return (
-    <section className="py-16 bg-background border-y border-border overflow-hidden" aria-label="שותפים אסטרטגיים">
+    <section className="py-16 bg-white border-y border-border overflow-hidden" aria-label="שותפים אסטרטגיים">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <h2 className="text-center text-lg font-semibold text-muted-foreground">
           שותפים אסטרטגיים לדרך
         </h2>
       </div>
-      <div className="relative">
-        <div className="flex animate-marquee items-center" style={{ width: "200%" }}>
-          {[...partners, ...partners].map((partner, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 mx-8 group cursor-default"
-            >
-              <div className="bg-white rounded-xl px-6 py-4 border border-border group-hover:border-secondary/30 group-hover:shadow-md transition-all duration-300 flex flex-col items-center gap-2 min-w-[140px]">
+      <div className="relative overflow-hidden">
+        {/* Fade edges */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-white to-transparent" />
+
+        <div
+          className="flex items-center"
+          style={{
+            animation: "partnersScroll 30s linear infinite",
+            width: "max-content",
+          }}
+        >
+          {/* Duplicate 4x to ensure seamless loop at any screen width */}
+          {[...partners, ...partners, ...partners, ...partners].map((partner, i) => (
+            <div key={i} className="flex-shrink-0 mx-8 group cursor-default">
+              <div className="bg-white rounded-xl px-6 py-4 border border-border group-hover:border-secondary/30 group-hover:shadow-md transition-all duration-300 flex items-center justify-center w-40 h-20">
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                    e.target.nextSibling.style.display = "block";
-                  }}
+                  className="max-h-14 max-w-[140px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
-                <span className="text-xs text-muted-foreground group-hover:text-secondary font-medium text-center transition-colors duration-300 hidden">
-                  {partner.name}
-                </span>
-                <span className="text-xs text-muted-foreground group-hover:text-secondary font-medium text-center transition-colors duration-300">
-                  {partner.name}
-                </span>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <style>{`
+        @keyframes partnersScroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-25%); }
+        }
+      `}</style>
     </section>
   );
 }

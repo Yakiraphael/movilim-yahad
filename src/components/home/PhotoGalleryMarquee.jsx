@@ -59,12 +59,13 @@ export default function PhotoGalleryMarquee() {
           <div
             className="flex gap-4"
             style={{
-              width: `${row1.length * 2 * 280}px`,
-              animation: `marqueeRTL 60s linear infinite`,
+              width: "max-content",
+              animation: `galleryRTL 60s linear infinite`,
               animationPlayState: isPaused ? "paused" : "running",
             }}
           >
-            {[...row1, ...row1].map((photo, i) => (
+            {/* 4x duplication ensures seamless loop at any viewport */}
+            {[...row1, ...row1, ...row1, ...row1].map((photo, i) => (
               <div
                 key={i}
                 className="flex-shrink-0 w-64 h-44 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
@@ -84,12 +85,12 @@ export default function PhotoGalleryMarquee() {
           <div
             className="flex gap-4"
             style={{
-              width: `${row2.length * 2 * 280}px`,
-              animation: `marqueeRTLReverse 55s linear infinite`,
+              width: "max-content",
+              animation: `galleryLTR 55s linear infinite`,
               animationPlayState: isPaused ? "paused" : "running",
             }}
           >
-            {[...row2, ...row2].map((photo, i) => (
+            {[...row2, ...row2, ...row2, ...row2].map((photo, i) => (
               <div
                 key={i}
                 className="flex-shrink-0 w-64 h-44 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
@@ -106,12 +107,12 @@ export default function PhotoGalleryMarquee() {
       </div>
 
       <style>{`
-        @keyframes marqueeRTL {
+        @keyframes galleryRTL {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-25%); }
         }
-        @keyframes marqueeRTLReverse {
-          0% { transform: translateX(-50%); }
+        @keyframes galleryLTR {
+          0% { transform: translateX(-25%); }
           100% { transform: translateX(0); }
         }
       `}</style>
