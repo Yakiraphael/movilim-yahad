@@ -16,11 +16,13 @@ const regulatoryLinks = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "פייסבוק" },
-  { icon: Linkedin, href: "#", label: "לינקדאין" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php/?id=100094705007552", label: "פייסבוק" },
   { icon: Instagram, href: "#", label: "אינסטגרם" },
-  { icon: Phone, href: "#", label: "וואטסאפ" },
 ];
+
+const PHONE = "052-509-0179";
+const WHATSAPP_HREF = "https://wa.me/972525090179";
+const EMAIL = "forum.movilim@gmail.com";
 
 export default function Footer() {
   return (
@@ -64,9 +66,9 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="mt-6 text-sm text-primary-foreground/60">
-              <p>info@movilimyahad.org.il</p>
-              <p className="mt-1">ישראל</p>
+            <div className="mt-6 text-sm text-primary-foreground/60 space-y-1">
+              <a href={`mailto:${EMAIL}`} className="block hover:text-secondary transition-colors" dir="ltr">{EMAIL}</a>
+              <a href={WHATSAPP_HREF} className="block hover:text-secondary transition-colors" dir="ltr">{PHONE}</a>
             </div>
           </div>
         </div>

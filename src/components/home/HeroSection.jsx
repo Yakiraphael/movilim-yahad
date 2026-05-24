@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const LOGO_URL = "https://media.base44.com/images/public/user_68c7b2fde08fc5feb083ff75/5e8dd2737_.jpg";
 
 const heroImages = [
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4301f8ad2_generated_image.png", alt: "תמונת פתיחה - פורום מובילים יחד" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/da99292b6_generated_image.png", alt: "קבוצת מנהיגים - פורום מובילים יחד" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3bf613fa3_generated_image.png", alt: "נשות מנהיגות - פורום מובילים יחד" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f04ae6c26_generated_image.png", alt: "ישיבת מנהיגות - פורום מובילים יחד" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2a507cbc3_DSC_4236JPG.jpg", alt: "ישיבת פורום" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e978e12d7_DSC_4424.jpg", alt: "אירוע הפורום" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/50de62eae_FB_IMG_1720981023126.jpg", alt: "כינוס הפורום" },
 ];
 
 export default function HeroSection() {

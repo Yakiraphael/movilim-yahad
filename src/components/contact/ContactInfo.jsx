@@ -2,11 +2,13 @@ import React from "react";
 import { Mail, MapPin, Facebook, Linkedin, Instagram, Phone } from "lucide-react";
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "פייסבוק", color: "hover:bg-blue-600" },
-  { icon: Linkedin, href: "#", label: "לינקדאין", color: "hover:bg-blue-700" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php/?id=100094705007552", label: "פייסבוק", color: "hover:bg-blue-600" },
   { icon: Instagram, href: "#", label: "אינסטגרם", color: "hover:bg-pink-600" },
-  { icon: Phone, href: "#", label: "וואטסאפ", color: "hover:bg-green-600" },
+  { icon: Phone, href: "https://wa.me/972525090179", label: "וואטסאפ", color: "hover:bg-green-600" },
 ];
+
+const EMAIL = "forum.movilim@gmail.com";
+const PHONE = "052-509-0179";
 
 export default function ContactInfo() {
   return (
@@ -20,9 +22,18 @@ export default function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">אימייל</p>
-              <a href="mailto:info@movilimyahad.org.il" className="text-foreground hover:text-secondary transition-colors font-medium" dir="ltr">
-                info@movilimyahad.org.il
+              <a href={`mailto:${EMAIL}`} className="text-foreground hover:text-secondary transition-colors font-medium" dir="ltr">
+                {EMAIL}
               </a>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+              <Phone className="w-5 h-5 text-secondary" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">טלפון / וואטסאפ</p>
+              <a href="https://wa.me/972525090179" className="text-foreground hover:text-secondary transition-colors font-medium" dir="ltr">{PHONE}</a>
             </div>
           </div>
           <div className="flex items-start gap-3">
