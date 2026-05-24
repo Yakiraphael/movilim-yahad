@@ -86,7 +86,7 @@ export default function Team() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="board" className="w-full" dir="rtl">
-            <TabsList className="w-full max-w-md mx-auto grid grid-cols-2 mb-12 h-auto rounded-3xl">
+            <TabsList className="w-full max-w-md mx-auto grid grid-cols-2 mb-12 h-auto rounded-lg">
               <TabsTrigger value="board" className="py-3 text-sm">
                 הוועד המנהל ומייסדי העמותה
               </TabsTrigger>
