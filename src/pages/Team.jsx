@@ -87,10 +87,10 @@ export default function Team() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="board" className="w-full" dir="rtl">
             <TabsList className="w-full max-w-md mx-auto grid grid-cols-2 mb-12 h-auto rounded-lg">
-              <TabsTrigger value="board" className="py-3 text-sm">
+              <TabsTrigger value="board" className="py-3 text-center lowercase text-xs">
                 הוועד המנהל ומייסדי העמותה
               </TabsTrigger>
-              <TabsTrigger value="professional" className="py-3 text-sm">
+              <TabsTrigger value="professional" className="py-3 text-xs">
                 מעטפת מקצועית וייעוץ משפטי
               </TabsTrigger>
             </TabsList>
