@@ -38,7 +38,7 @@ export default function Navbar() {
       role="banner">
       
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="ניווט ראשי">
-        <div className="flex items-center justify-between h-16 md:h-20 bg-[hsl(var(--muted))]">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0" aria-label="פורום מובילים יחד - דף הבית">
             <img

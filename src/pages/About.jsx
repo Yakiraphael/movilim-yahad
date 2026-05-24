@@ -61,7 +61,7 @@ const programs = [
 
 export default function About() {
   return (
-    <div className="pt-20 bg-[hsl(var(--background))]">
+    <div className="pt-20">
       {/* Hero */}
       <section className="bg-primary py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
