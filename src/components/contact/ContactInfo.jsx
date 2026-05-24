@@ -42,7 +42,7 @@ export default function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">כתובת</p>
-              <p className="text-foreground font-medium">ישראל</p>
+              <p className="text-foreground font-medium">שד' ירושלים 18, אשדוד 7752463</p>
             </div>
           </div>
         </div>
@@ -65,13 +65,18 @@ export default function ContactInfo() {
         </div>
       </div>
 
-      {/* Map Placeholder */}
-      <div className="rounded-2xl overflow-hidden border border-border h-64 bg-muted flex items-center justify-center">
-        <div className="text-center text-muted-foreground">
-          <MapPin className="w-8 h-8 mx-auto mb-2" />
-          <p className="text-sm">מפה אינטראקטיבית</p>
-          <p className="text-xs">תתעדכן בקרוב</p>
-        </div>
+      {/* Map */}
+      <div className="rounded-2xl overflow-hidden border border-border h-64">
+        <iframe
+          title="מיקום פורום מובילים יחד"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.5!2d34.6489!3d31.8024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b3b0b0b0b0b1%3A0x0!2z16nXlCDXmNep16XXqdeslCAxOCwg15DXqdel15Ug7775!5e0!3m2!1siw!2sil!4v1700000000000!5m2!1siw!2sil&q=שד+ירושלים+18+אשדוד"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </div>
   );
