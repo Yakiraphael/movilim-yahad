@@ -13,8 +13,12 @@ export default function TeamMemberModal({ member, open, onClose }) {
           <DialogTitle className="text-xl">{member.name}</DialogTitle>
         </DialogHeader>
         <div className="flex flex-col items-center text-center">
-          <div className="w-28 h-28 rounded-full bg-muted flex items-center justify-center mb-4">
-            <User className="w-14 h-14 text-muted-foreground/30" />
+          <div className="w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4 overflow-hidden border-4 border-secondary/20">
+            {member.photo ? (
+              <img src={member.photo} alt={member.name} className="w-full h-full object-cover object-top" />
+            ) : (
+              <User className="w-14 h-14 text-muted-foreground/30" />
+            )}
           </div>
           <p className="text-secondary font-medium">{member.title}</p>
           {member.badge && (
@@ -22,7 +26,7 @@ export default function TeamMemberModal({ member, open, onClose }) {
               {member.badge}
             </Badge>
           )}
-          <p className="text-muted-foreground text-sm leading-relaxed mt-4">
+          <p className="text-muted-foreground text-sm leading-relaxed mt-4 whitespace-pre-line text-right">
             {member.bio}
           </p>
           {member.linkedin && (

@@ -18,7 +18,11 @@ export default function TeamMemberCard({ member, onSelect, index }) {
       >
         {/* Portrait */}
         <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
-          <User className="w-20 h-20 text-muted-foreground/30" />
+          {member.photo ? (
+            <img src={member.photo} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+          ) : (
+            <User className="w-20 h-20 text-muted-foreground/30" />
+          )}
         </div>
         {/* Info */}
         <div className="p-5">
