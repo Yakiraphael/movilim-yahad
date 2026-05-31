@@ -32,8 +32,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
       isScrolled ?
-      "bg-primary/95 backdrop-blur-md shadow-lg" :
-      "bg-transparent"}`
+      "bg-white shadow-lg border-b border-border" :
+      "bg-primary/90 backdrop-blur-sm"}`
       }
       role="banner">
       
@@ -55,9 +55,10 @@ export default function Navbar() {
               key={link.path}
               to={link.path}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-              location.pathname === link.path ?
-              "text-secondary bg-white/10" :
-              "text-primary-foreground/80 hover:text-secondary hover:bg-white/5"}`
+              isScrolled
+                ? (location.pathname === link.path ? "text-secondary font-bold" : "text-foreground hover:text-secondary")
+                : (location.pathname === link.path ? "text-secondary bg-white/10" : "text-primary-foreground/80 hover:text-secondary hover:bg-white/5")
+              }`
               }>
               
                 {link.label}
@@ -68,7 +69,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:block">
             <Link to="/contact">
-              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold px-6">
+              <Button className={`font-semibold px-6 ${isScrolled ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-secondary text-secondary-foreground hover:bg-secondary/90"}`}>
                 הצטרפו אלינו
               </Button>
             </Link>
@@ -76,7 +77,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-primary-foreground p-2"
+            className={`md:hidden p-2 ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}
             onClick={() => setIsMobileOpen(!isMobileOpen)}
             aria-expanded={isMobileOpen}
             aria-label={isMobileOpen ? "סגירת תפריט" : "פתיחת תפריט"}>
