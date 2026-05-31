@@ -47,6 +47,7 @@ export default function Footer() {
               <Link to="/" className="block text-sm text-primary-foreground/70 hover:text-secondary transition-colors">דף הבית</Link>
               <Link to="/about" className="block text-sm text-primary-foreground/70 hover:text-secondary transition-colors">אודותינו</Link>
               <Link to="/team" className="block text-sm text-primary-foreground/70 hover:text-secondary transition-colors">ההנהגה והצוות</Link>
+              <Link to="/activities" className="block text-sm text-primary-foreground/70 hover:text-secondary transition-colors">פעילויות</Link>
               <Link to="/contact" className="block text-sm text-primary-foreground/70 hover:text-secondary transition-colors">צור קשר</Link>
             </nav>
           </div>

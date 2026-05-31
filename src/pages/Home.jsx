@@ -3,7 +3,7 @@ import HeroSection from "../components/home/HeroSection";
 import PillarsSection from "../components/home/PillarsSection";
 import TimelineSection from "../components/home/TimelineSection";
 import PartnersMarquee from "../components/home/PartnersMarquee";
-import PhotoGalleryMarquee from "../components/home/PhotoGalleryMarquee";
+import PhotoGalleryGrid from "../components/home/PhotoGalleryGrid";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <PillarsSection />
       <TimelineSection />
-      <PhotoGalleryMarquee />
+      <PhotoGalleryGrid />
       <PartnersMarquee />
     </div>
   );

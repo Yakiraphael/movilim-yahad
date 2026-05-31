@@ -33,7 +33,7 @@ const boardMembers = [
   name: "אביבה חזן",
   title: "חברת ועד וממייסדי העמותה",
   badge: "ממייסדי העמותה",
-  photo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3c6f8f72c_.jpg",
+  photo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/50a01aa3c_.jpg",
   bio: "אביבה חזן היא חברת הוועד המנהל ומהמייסדות של פורום מובילים יחד. פועלת לקידום ייצוג נשים ולחיזוק המנהיגות הנשית בקהילה.",
   linkedin: "#"
 },

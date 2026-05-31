@@ -10,6 +10,7 @@ const navLinks = [
 { label: "דף הבית", path: "/" },
 { label: "אודותינו", path: "/about" },
 { label: "ההנהגה והצוות", path: "/team" },
+{ label: "פעילויות", path: "/activities" },
 { label: "צור קשר", path: "/contact" }];
 
 
