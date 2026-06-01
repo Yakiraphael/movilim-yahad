@@ -3,16 +3,17 @@ import { Link } from "react-router-dom";
 import { Facebook, Linkedin, Instagram, Phone } from "lucide-react";
 import GuideStarBanner from "../shared/GuideStarBanner";
 
+
 const LOGO_URL = "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/b2d3a44a1_OIP-removebg-preview.png";
 
 const regulatoryLinks = [
-  { label: "תעודת רישום עמותה", href: "#" },
+  { label: "תעודת רישום עמותה", href: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/13a08a736_f0317878-fcd9-49a9-8b5e-71765eb976d8.jpg", external: true },
   { label: "אישור ניהול תקין", href: "#" },
   { label: "אישור סעיף 46", href: "#" },
   { label: "דוחות כספיים", href: "#" },
   { label: "תקנון העמותה", href: "#" },
-  { label: "הצהרת נגישות", href: "#" },
-  { label: "מדיניות פרטיות", href: "#" },
+  { label: "הצהרת נגישות", href: "/accessibility", external: false },
+  { label: "מדיניות פרטיות", href: "/privacy", external: false },
 ];
 
 const socialLinks = [
@@ -81,17 +82,34 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <h4 className="text-xs text-secondary font-semibold mb-3">שקיפות ורגולציה</h4>
           <div className="flex flex-wrap gap-x-4 gap-y-2">
-            {regulatoryLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-xs text-primary-foreground/50 hover:text-secondary transition-colors underline underline-offset-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {link.label}
-              </a>
-            ))}
+            {regulatoryLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-xs text-primary-foreground/50 hover:text-secondary transition-colors underline underline-offset-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.label}
+                </a>
+              ) : link.href !== "#" ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="text-xs text-primary-foreground/50 hover:text-secondary transition-colors underline underline-offset-2"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <span
+                  key={link.label}
+                  className="text-xs text-primary-foreground/30 underline underline-offset-2 cursor-default"
+                >
+                  {link.label}
+                </span>
+              )
+            )}
           </div>
           <p className="text-xs text-primary-foreground/30 mt-4">
             © {new Date().getFullYear()} פורום מובילים יחד (ע"ר 580795821). כל הזכויות שמורות.
