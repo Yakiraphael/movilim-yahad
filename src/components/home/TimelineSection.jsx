@@ -54,7 +54,6 @@ const timelineItems = [
     subtitle: "צדק חברתי, חוסן קהילתי וערבות הדדית",
     content: "הקמת חמ\"ל סיוע קהילתי וצוותי פעולה להתמודדות עם עוולות חברתיות ומשברים. מפתח ליווי שוטף למשפחות ואוכלוסיות מוחלשות, והשתתפות במאבק הציבורי והתקשורתי הלאומי לחיפוש ואיתור הילדה הנעדרת היימנוט קסאו.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5416f513_WhatsAppImage2025-10-04at2336361.jpg", alt: "פעילות קהילתית 2025" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/06621f912_WhatsAppImage2024-04-01at102735.jpg", alt: "כינוס הפורום" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "ישיבה קהילתית" },
     ],

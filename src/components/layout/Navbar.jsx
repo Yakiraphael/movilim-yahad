@@ -95,7 +95,7 @@ export default function Navbar() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-primary/98 backdrop-blur-md border-t border-white/10">
+          className="md:hidden bg-white border-t border-border shadow-lg">
           
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) =>
@@ -104,15 +104,15 @@ export default function Navbar() {
               to={link.path}
               className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
               location.pathname === link.path ?
-              "text-secondary bg-white/10" :
-              "text-primary-foreground/80 hover:text-secondary"}`
+              "text-secondary bg-secondary/10" :
+              "text-foreground hover:text-secondary"}`
               }>
               
                   {link.label}
                 </Link>
             )}
               <Link to="/contact" className="block pt-2">
-                <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold">
+                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
                   הצטרפו אלינו
                 </Button>
               </Link>
