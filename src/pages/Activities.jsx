@@ -1,14 +1,68 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { MapPin, Users, Calendar } from "lucide-react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { MapPin, X, Phone } from "lucide-react";
 
 const hubs = [
-  { city: "אשדוד", region: "מרכז-דרום", lat: 31.8044, lng: 34.6553, description: "המטה הראשי — משרדי הפורום, ישיבות ועד, אירועים ארציים.", isHQ: true },
-  { city: "ירושלים", region: "ירושלים", lat: 31.7683, lng: 35.2137, description: "פעילות פרלמנטרית, ועדות כנסת ולובינג ממשלתי.", isHQ: false },
-  { city: "תל אביב", region: "גוש דן", lat: 32.0853, lng: 34.7818, description: "רשתות עסקיות, נטוורקינג ואירועי מנהיגות.", isHQ: false },
-  { city: "חיפה", region: "צפון", lat: 32.7940, lng: 34.9896, description: "פעילות אקדמית, שיתופי פעולה עם אוניברסיטת חיפה.", isHQ: false },
-  { city: "באר שבע", region: "דרום", lat: 31.2530, lng: 34.7915, description: "קהילות הנגב, מרכזי קהילה ופעילות צעירים.", isHQ: false },
-  { city: "נתניה", region: "שרון", lat: 32.3215, lng: 34.8532, description: "פעילות עירונית ומנהיגות מוניציפלית.", isHQ: false },
+  {
+    city: "אשדוד",
+    region: "מרכז-דרום",
+    description: "המטה הראשי — משרדי הפורום, ישיבות ועד, אירועים ארציים.",
+    isHQ: true,
+    flyer: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3e2a3efc1_a69fbddf-d64a-4d4a-86bd-475e16a6b0f2.jpg",
+    contact: "חגית טספאי – מנהלת ונציגת הפורום באשקלון",
+    phone: "050-9062004",
+  },
+  {
+    city: "קריית גת",
+    region: "שפלה",
+    description: "פעילות קהילתית ומנהיגות מוניציפלית באזור קריית גת.",
+    isHQ: false,
+    flyer: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f51a0210e_6254b4cb-c8b4-4dd5-9d0b-0cee954c940d.jpg",
+    contact: "ענת אלפה – אשת חינוך ואקטיביסטית, מובילת קבוצת מנהיגות בעיר קריית גת, ונציגת פורום מובילים יחד",
+    phone: "052-8040787",
+  },
+  {
+    city: "באר שבע",
+    region: "דרום",
+    description: "קהילות הנגב, מרכזי קהילה ופעילות צעירים.",
+    isHQ: false,
+    flyer: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/76a523d44_b1269d4d-7495-435e-9af1-bab66a5dbdcb.jpg",
+    contact: "עמרם אקלום – איש חינוך ומרצה, נציג ומוביל קבוצת מנהיגות בעיר באר שבע מטעם פורום מובילים ארצי",
+    phone: "050-7831231",
+  },
+  {
+    city: "גדרה",
+    region: "שפלה",
+    description: "פעילות קהילתית ומנהיגות מקומית ביישוב גדרה.",
+    isHQ: false,
+    flyer: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/84fcea911_016f467b-fab9-413a-aa3c-a80bd7da8fce.jpg",
+    contact: "מנטגבוש קנדה – אקטיביסטית, ואשת חינוך מובילה קבוצת מנהיגות ביישוב גדרה מטעם פורום מובילים יחד",
+    phone: "053-3037281",
+  },
+  {
+    city: "ירושלים",
+    region: "ירושלים",
+    description: "פעילות פרלמנטרית, ועדות כנסת ולובינג ממשלתי.",
+    isHQ: false,
+  },
+  {
+    city: "תל אביב",
+    region: "גוש דן",
+    description: "רשתות עסקיות, נטוורקינג ואירועי מנהיגות.",
+    isHQ: false,
+  },
+  {
+    city: "חיפה",
+    region: "צפון",
+    description: "פעילות אקדמית, שיתופי פעולה עם אוניברסיטת חיפה.",
+    isHQ: false,
+  },
+  {
+    city: "נתניה",
+    region: "שרון",
+    description: "פעילות עירונית ומנהיגות מוניציפלית.",
+    isHQ: false,
+  },
 ];
 
 const galleryPhotos = [
@@ -27,6 +81,8 @@ const galleryPhotos = [
 ];
 
 export default function Activities() {
+  const [selectedHub, setSelectedHub] = useState(null);
+
   return (
     <div className="pt-20">
       {/* Hero */}
@@ -37,7 +93,7 @@ export default function Activities() {
               פעילויות <span className="text-secondary">מקומיות</span>
             </h1>
             <p className="text-lg text-primary-foreground/80 max-w-2xl">
-              הפורום פעיל בכל רחבי הארץ — ממטה ראשי באשדוד ועד מוקדי פעילות בירושלים, תל אביב, חיפה ובאר שבע.
+              הפורום פעיל בכל רחבי הארץ — ממטה ראשי באשדוד ועד מוקדי פעילות בקריית גת, באר שבע, גדרה ועוד.
             </p>
           </motion.div>
         </div>
@@ -50,7 +106,7 @@ export default function Activities() {
             מוקדי הפעילות <span className="text-secondary">בארץ</span>
           </h2>
 
-          {/* Interactive Israel Map Embed */}
+          {/* Map */}
           <div className="rounded-2xl overflow-hidden border border-border shadow-lg mb-12 h-96">
             <iframe
               title="מפת מוקדי פעילות הפורום"
@@ -65,18 +121,23 @@ export default function Activities() {
           </div>
 
           {/* Hub Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {hubs.map((hub, i) => (
               <motion.div
                 key={hub.city}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className={`rounded-2xl border p-6 ${hub.isHQ ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border hover:border-secondary/40 hover:shadow-lg"} transition-all duration-300`}
+                transition={{ delay: i * 0.07 }}
+                onClick={() => hub.flyer && setSelectedHub(hub)}
+                className={`rounded-2xl border p-6 transition-all duration-300 ${
+                  hub.isHQ
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-card border-border hover:border-secondary/40 hover:shadow-lg"
+                } ${hub.flyer ? "cursor-pointer" : ""}`}
               >
                 <div className="flex items-start gap-3 mb-3">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${hub.isHQ ? "bg-secondary text-secondary-foreground" : "bg-secondary/10"}`}>
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${hub.isHQ ? "bg-secondary" : "bg-secondary/10"}`}>
                     <MapPin className={`w-5 h-5 ${hub.isHQ ? "text-secondary-foreground" : "text-secondary"}`} />
                   </div>
                   <div>
@@ -90,6 +151,11 @@ export default function Activities() {
                 <p className={`text-sm leading-relaxed ${hub.isHQ ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
                   {hub.description}
                 </p>
+                {hub.flyer && (
+                  <p className={`text-xs mt-3 font-medium ${hub.isHQ ? "text-secondary" : "text-secondary"}`}>
+                    לחץ לפרטים ←
+                  </p>
+                )}
               </motion.div>
             ))}
           </div>
@@ -125,6 +191,55 @@ export default function Activities() {
           </p>
         </div>
       </section>
+
+      {/* Flyer Modal */}
+      <AnimatePresence>
+        {selectedHub && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedHub(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-white rounded-2xl overflow-hidden max-w-lg w-full shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative">
+                <button
+                  onClick={() => setSelectedHub(null)}
+                  className="absolute top-3 left-3 z-10 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+                <img
+                  src={selectedHub.flyer}
+                  alt={`מודעת פעילות ${selectedHub.city}`}
+                  className="w-full object-contain max-h-[70vh]"
+                />
+              </div>
+              {(selectedHub.contact || selectedHub.phone) && (
+                <div className="p-4 bg-primary text-right">
+                  <p className="text-primary-foreground/90 text-sm leading-relaxed">{selectedHub.contact}</p>
+                  {selectedHub.phone && (
+                    <a
+                      href={`tel:${selectedHub.phone}`}
+                      className="inline-flex items-center gap-2 mt-2 text-secondary font-bold text-lg hover:underline"
+                    >
+                      <Phone className="w-4 h-4" />
+                      {selectedHub.phone}
+                    </a>
+                  )}
+                </div>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
