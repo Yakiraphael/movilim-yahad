@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Target, Eye, Shield, Users, BookOpen, Mic, Star, AlertTriangle } from "lucide-react";
+import { Target, Eye, Shield, Users, BookOpen, Mic, Star, Flag, Landmark, HeartHandshake, ScanSearch, GraduationCap, Megaphone } from "lucide-react";
 import StatsCounters from "../components/about/StatsCounters";
 
 const values = [
@@ -206,12 +206,12 @@ export default function About() {
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">מטרות הפורום</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
-                { title: "חזון", icon: "🎯" },
-                { title: "הגדרת מטרות", icon: "📋" },
-                { title: "בחירת שותפים", icon: "🤝" },
-                { title: "השתתפות חברי הפורום", icon: "👥" },
-                { title: "מדיניות הפורום", icon: "📜" },
-                { title: "מדדים", icon: "📊" },
+                { title: "חזון", Icon: Flag },
+                { title: "הגדרת מטרות", Icon: Target },
+                { title: "בחירת שותפים", Icon: HeartHandshake },
+                { title: "השתתפות חברי הפורום", Icon: Users },
+                { title: "מדיניות הפורום", Icon: Landmark },
+                { title: "מדדים", Icon: ScanSearch },
               ].map((goal, i) => (
                 <motion.div
                   key={i}
@@ -221,7 +221,7 @@ export default function About() {
                   transition={{ delay: i * 0.07 }}
                   className="bg-card border border-border rounded-2xl p-4 text-center hover:border-secondary/40 transition-all"
                 >
-                  <div className="text-3xl mb-2">{goal.icon}</div>
+                  <goal.Icon className="w-8 h-8 text-secondary mx-auto mb-2" />
                   <p className="font-bold text-sm text-foreground">{goal.title}</p>
                 </motion.div>
               ))}

@@ -10,7 +10,11 @@ const timelineItems = [
     subtitle: "מעלים הילוך: מקימים בית למנהיגות",
     content: "חבירתם של אקטיביסטים, מנהיגים צעירים ואנשי עשייה מבני הקהילה בראשות אברהם (אבי) יצחק להתאגדות רשמית כעמותה (ע\"ר 580795821). המטרה: יצירת פלטפורמה אקדמית ובלתי תלויה שתעצים מנהיגות מקצועית ותסייע לצעירים להיכנס לתוך תחומי פעילות במרחב הציבורי והפוליטי.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "ישיבת ייסוד הפורום" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ae9fdb16f_2.jpg", alt: "חגיגת הקמת העמותה" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c09af2d00_3.jpg", alt: "ישיבת ייסוד הפורום" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/62fbcb7b4_4.jpg", alt: "חברי מייסדים" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7a1afab0e_5.jpg", alt: "ישיבת הייסוד" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "אירוע ייסוד" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/35ae1e064_1492023-9635.jpg", alt: "חברי מייסדים" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f37d9dd69_-8675.jpg", alt: "ישיבת הייסוד" },
     ],
@@ -21,7 +25,6 @@ const timelineItems = [
     subtitle: "משפיעים מתוך מוקדי קבלת ההחלטות",
     content: "תחילת פעילות אינטנסיבית בוועדות הכנסת השונות. הפורום הופך לקול המקצועי המפקח על החלטות הממשלה בנושא ייצוג הולם לבני הקהילה בשירות המדינה, בחברות ממשלתיות ובתאגידים ציבוריים. הפורום מסייע בגיבוש ובניית החזון והמטרות של מועמדים ציבוריים.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg", alt: "ועדת העלייה והקליטה - כנסת" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/8a86a793d_WhatsAppImage2024-04-01at102551.jpg", alt: "פגישה פרלמנטרית" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0c7703618_WhatsAppImage2024-04-03at15157PM.jpg", alt: "ישיבה מקצועית" },
     ],
@@ -32,6 +35,7 @@ const timelineItems = [
     subtitle: "מניעים שינוי מהשטח",
     content: "הפורום מסייע למועמדים בחירות מקומיות וארציות, מחזק יכולות מנהיגותיות, ומלווה מתמודדים בקבלת החלטות ומיומנויות ניהוליות. שיתוף פעולה עם מנהיגים פוליטיים ובניית גשרים בין הקהילה לממסד.",
     images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7ed506407_WhatsAppImage2024-04-01at092338.jpg", alt: "סדנת מנהיגות" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fde4b8314_WhatsAppImage2024-03-26at112521PM.jpg", alt: "קמפיין בחירות" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/6488707f7_WhatsAppImage2024-03-26at112733PM.jpg", alt: "בחירות מוניציפליות" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/45c2f9bfe_WhatsAppImage2024-03-28at83135PM.jpg", alt: "תמיכה במועמד" },
@@ -43,7 +47,7 @@ const timelineItems = [
     subtitle: "מחזקים כישורים, מעצימים אנשים",
     content: "הפורום מעניק הכשרות מעמיקות בתחומים: ניהול משא ומתן, מיומנויות תקשורת, התמצאות במדיה חברתית, פתרון בעיות וחשיבה אסטרטגית. כל אלה כדי לחזק מתמודדים עתידיים הצומחים מהשטח.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7ed506407_WhatsAppImage2024-04-01at092338.jpg", alt: "סדנת מנהיגות" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fde4b8314_WhatsAppImage2024-03-26at112521PM.jpg", alt: "בחירות מוניציפליות" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3b90d53e7_WhatsAppImage2024-04-01at092926.jpg", alt: "פגישה מקצועית" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d6e89d055_WhatsAppImage2024-04-01at102704.jpg", alt: "הצגת חזון" },
     ],
