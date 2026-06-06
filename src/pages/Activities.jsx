@@ -66,19 +66,36 @@ const hubs = [
 ];
 
 const galleryPhotos = [
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5f0b7a21_WhatsAppImage2026-05-31at125538.jpg", alt: "ישיבת פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0df8cad97_WhatsAppImage2026-05-31at1255391.jpg", alt: "ישיבה עם נבחרי ציבור" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/37a129652_WhatsAppImage2026-05-31at1255411.jpg", alt: "כנס מנהיגות" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4f504abbe_WhatsAppImage2026-05-31at125541.jpg", alt: "פגישת מנהיגים" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/58f2fc9ae_WhatsAppImage2026-05-31at125552.jpg", alt: "אירוע פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d6725557a_WhatsAppImage2026-05-31at125554.jpg", alt: "הרצאה מקצועית" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7333fb801_WhatsAppImage2026-05-31at125559.jpg", alt: "ישיבת עבודה" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ec5c7d5ef_WhatsAppImage2026-05-31at125600.jpg", alt: "צוות הפורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/1a33f604c_WhatsAppImage2026-05-31at1256041.jpg", alt: "כנס ארצי" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/675af5cc2_WhatsAppImage2026-05-31at125604.jpg", alt: "אירוע קהילתי" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c4769194c_WhatsAppImage2026-05-31at125605.jpg", alt: "מפגש מנהיגות" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fa6ef5629_WhatsAppImage2026-05-31at125606.jpg", alt: "פורום בפעולה" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f5b05aa07_WhatsAppImage2026-05-31at125631.jpg", alt: "ישיבת מנהיגות" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/6008a897c_WhatsAppImage2026-05-31at125632.jpg", alt: "כנס מובילים" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/79a525976_.jpg", alt: "פגישת שותפים" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/92cf3367a_.jpg", alt: "אירוע הפורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e00c083ca_.jpg", alt: "ישיבה אסטרטגית" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/284fb299c_.jpg", alt: "כנס ארצי" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ad1994384_.jpg", alt: "פעילות קהילתית" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3b090814d_WhatsAppImage2026-05-31at125532.jpg", alt: "מפגש פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c7675b498_WhatsAppImage2026-05-31at125532.jpg", alt: "ישיבת הנהגה" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2a507cbc3_DSC_4236JPG.jpg", alt: "ישיבת פורום" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/955f85946_SE02-8557-.jpg", alt: "אירוע הוקרה" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "אירוע פורום" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg", alt: "ועדת כנסת" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/6ea024195_245A3276-.jpg", alt: "ישיבה מקצועית" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fb183fff4_245A3168.jpg", alt: "סדנת מנהיגות" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2d6b44775_SE02-8515-.jpg", alt: "צוות הפורום" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "פעילות קהילתית" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/26b52baf9_FB_IMG_1718701193825.jpg", alt: "כנס הפורום" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e978e12d7_DSC_4424.jpg", alt: "חגיגת הפורום" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7ed506407_WhatsAppImage2024-04-01at092338.jpg", alt: "סדנה מנהיגותית" },
-  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fde4b8314_WhatsAppImage2024-03-26at112521PM.jpg", alt: "ישיבת ועד" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg", alt: "ועדת כנסת" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "אירוע פורום" },
 ];
 
 export default function Activities() {
@@ -159,6 +176,86 @@ export default function Activities() {
                 )}
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Municipal Candidates Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+              מרכז הייעוץ והליווי <span className="text-secondary">לזירה המוניציפלית</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-base leading-relaxed">
+              הפורום מלווה מועמדים ומועמדות בתהליך ההתמודדות הבחירותית ברמה המקומית — מהגדרת החזון האישי ועד לניהול הקמפיין.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-12">
+            {/* Text content */}
+            <div className="space-y-6">
+              <div className="bg-card border border-border rounded-2xl p-6">
+                <h3 className="text-lg font-bold text-foreground mb-3">תהליך ההתמודדות</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  הפורום מסייע למועמדים לבנות נוכחות ציבורית אמינה ומשפיעה ברמה המוניציפלית. הליווי כולל הכשרה מקצועית בתחומי ניהול קמפיין, בניית קשרי קהילה, שיווק פוליטי ומיומנויות ניהוליות.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {[
+                    "הגדרת פלטפורמה ציבורית וחזון עירוני",
+                    "בניית צוות קמפיין ורשתות תמיכה",
+                    "הכשרה בנאום, מדיה ודיבייטינג",
+                    "ייעוץ אסטרטגי לאורך כל תהליך ההתמודדות",
+                    "ליווי בפגישות עם בעלי עניין ומוסדות",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-primary rounded-2xl p-6">
+                <p className="text-white font-bold text-base mb-2">מעוניינים בליווי?</p>
+                <p className="text-primary-foreground/80 text-sm leading-relaxed">
+                  הפורום מזמין מועמדים ומועמדות פוטנציאליים ליצור קשר ולהצטרף לתוכנית הליווי המוניציפלית שלנו.
+                </p>
+              </div>
+            </div>
+
+            {/* Brochure / content images */}
+            <div className="space-y-4">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-md">
+                <img
+                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/174d69198_WhatsAppImage2026-05-31at125539.jpg"
+                  alt="תעודת הוקרה לפורום"
+                  className="w-full object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                  <img
+                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5b8e0d42_.jpg"
+                    alt="פרויקט זוכרים ומנצחים"
+                    className="w-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                  <img
+                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fa6ef5629_WhatsAppImage2026-05-31at125606.jpg"
+                    alt="קמפיין מוניציפלי"
+                    className="w-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                <img
+                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c4769194c_WhatsAppImage2026-05-31at125605.jpg"
+                  alt="ייעוץ לקמפיין בחירות"
+                  className="w-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

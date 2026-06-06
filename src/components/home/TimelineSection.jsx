@@ -10,13 +10,10 @@ const timelineItems = [
     subtitle: "מעלים הילוך: מקימים בית למנהיגות",
     content: "חבירתם של אקטיביסטים, מנהיגים צעירים ואנשי עשייה מבני הקהילה בראשות אברהם (אבי) יצחק להתאגדות רשמית כעמותה (ע\"ר 580795821). המטרה: יצירת פלטפורמה אקדמית ובלתי תלויה שתעצים מנהיגות מקצועית ותסייע לצעירים להיכנס לתוך תחומי פעילות במרחב הציבורי והפוליטי.",
     images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/62fbcb7b4_4.jpg", alt: "ישיבת ייסוד הפורום" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ae9fdb16f_2.jpg", alt: "חגיגת הקמת העמותה" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c09af2d00_3.jpg", alt: "ישיבת ייסוד הפורום" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/62fbcb7b4_4.jpg", alt: "חברי מייסדים" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c09af2d00_3.jpg", alt: "לחיים — הקמת העמותה" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7a1afab0e_5.jpg", alt: "ישיבת הייסוד" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "אירוע ייסוד" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/35ae1e064_1492023-9635.jpg", alt: "חברי מייסדים" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f37d9dd69_-8675.jpg", alt: "ישיבת הייסוד" },
     ],
   },
   {
@@ -58,6 +55,8 @@ const timelineItems = [
     subtitle: "צדק חברתי, חוסן קהילתי וערבות הדדית",
     content: "הקמת חמ\"ל סיוע קהילתי וצוותי פעולה להתמודדות עם עוולות חברתיות ומשברים. מפתח ליווי שוטף למשפחות ואוכלוסיות מוחלשות, והשתתפות במאבק הציבורי והתקשורתי הלאומי לחיפוש ואיתור הילדה הנעדרת היימנוט קסאו.",
     images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/16baef9f6_.jpg", alt: "לוגו פורום מובילים יחד" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5b8e0d42_.jpg", alt: "חיילים — תמיכה בלוחמים" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/06621f912_WhatsAppImage2024-04-01at102735.jpg", alt: "כינוס הפורום" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "ישיבה קהילתית" },
     ],
