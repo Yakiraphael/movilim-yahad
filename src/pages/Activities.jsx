@@ -8,9 +8,6 @@ const hubs = [
     region: "מרכז-דרום",
     description: "המטה הראשי — משרדי הפורום, ישיבות ועד, אירועים ארציים.",
     isHQ: true,
-    flyer: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3e2a3efc1_a69fbddf-d64a-4d4a-86bd-475e16a6b0f2.jpg",
-    contact: "חגית טספאי – מנהלת ונציגת הפורום באשקלון",
-    phone: "050-9062004",
   },
   {
     city: "קריית גת",
@@ -52,10 +49,13 @@ const hubs = [
     isHQ: false,
   },
   {
-    city: "חיפה",
-    region: "צפון",
-    description: "פעילות אקדמית, שיתופי פעולה עם אוניברסיטת חיפה.",
+    city: "אשקלון",
+    region: "דרום-מרכז",
+    description: "פעילות קהילתית ומנהיגות מוניציפלית באשקלון.",
     isHQ: false,
+    flyer: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3e2a3efc1_a69fbddf-d64a-4d4a-86bd-475e16a6b0f2.jpg",
+    contact: "חגית טספאי – מנהלת ונציגת הפורום באשקלון",
+    phone: "050-9062004",
   },
   {
     city: "נתניה",

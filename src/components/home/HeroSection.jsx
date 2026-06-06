@@ -6,17 +6,14 @@ import { motion, AnimatePresence } from "framer-motion";
 const LOGO_URL = "https://media.base44.com/images/public/user_68c7b2fde08fc5feb083ff75/5e8dd2737_.jpg";
 
 const heroImages = [
-{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2a507cbc3_DSC_4236JPG.jpg", alt: "ישיבת פורום" },
-{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/66878dbca_1492023-9769.jpg", alt: "אירוע פורום" },
-{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg", alt: "ועדת כנסת" },
-{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/955f85946_SE02-8557-.jpg", alt: "אירוע הוקרה" },
-{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/6ea024195_245A3276-.jpg", alt: "ישיבה מקצועית" }];
+{ url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/641314543_1.jpg", alt: "ישיבת פורום מובילים יחד" }];
 
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
+    if (heroImages.length <= 1) return;
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % heroImages.length);
     }, 4500);

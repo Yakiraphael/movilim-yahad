@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Target, Eye, Heart, Shield, Users, BookOpen, Mic, Star } from "lucide-react";
+import { Target, Eye, Shield, Users, BookOpen, Mic, Star, AlertTriangle } from "lucide-react";
 import StatsCounters from "../components/about/StatsCounters";
 
 const values = [
@@ -39,8 +39,8 @@ const values = [
 const programs = [
 {
   icon: Star,
-  title: 'תוכנית "מנהיגות צעירה"',
-  description: "תוכנית הכשרה לנוער מהקהילה ברחבי הארץ, המצמיחה את מנהיגי המחר ומקנה להם כלים לפעולה ציבורית."
+  title: 'תוכנית הכשרת מנהיגות יישובית עירונית',
+  description: 'הכשרה ייעודית לפעילים ופעילות במרחב הציבורי — הכשרה יישובית עירונית המקנה כלים מעשיים בניהול, תקשורת, קבלת החלטות ויכולת השפעה מוניציפלית וקהילתית.'
 },
 {
   icon: Users,
@@ -50,12 +50,17 @@ const programs = [
 {
   icon: Target,
   title: "לובינג פרלמנטרי",
-  description: "פיקוח מקצועי על ועדות הכנסת, הגשת עמדות ומסמכי מדיניות, וייצוג אינטרסים הקהילה בזירה הלאומית."
+  description: "פיקוח מקצועי על ועדות הכנסת, הגשת עמדות ומסמכי מדיניות, וייצוג אינטרסים הקהילה בזירה הלאומית. ליווי, ייעוץ ותמיכה למועמדים מתוכנו במרחב הציבורי המקומי והארצי. הארגון עוקב אחר החלטות ממשלה, מבקר ומפקח על ייעודן והניוד שלהן למשרדים השונים, לארגונים, עמותות והמגזר הפרטי הקשורים לקהילה."
 },
 {
   icon: Mic,
   title: "הכשרה תקשורתית",
   description: "סדנאות מדיה, כתיבת נאומים, ניהול מדיה חברתית, וליווי אנשי תקשורת לשיפור ייצוג הקהילה."
+},
+{
+  icon: BookOpen,
+  title: "התערבות חינוכית",
+  description: "כתיבת אמנה חברתית למניעת חרמות מכלל הגילאים והמינים — יצירת נורמה חברתית מחייבת המקדמת שיח כבוד, הכלה ואחריות הדדית בין כלל חברי הקהילה."
 }];
 
 
@@ -69,7 +74,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl">
+            className="text-center max-w-3xl mx-auto">
             
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
               אודות <span className="text-secondary">הפורום</span>
@@ -100,6 +105,9 @@ export default function About() {
               </p>
               <p className="text-muted-foreground leading-loose text-lg">
                 ייחודו של הפורום טמון גם בפעילות <strong className="text-foreground">פיקוח, מעקב וביקורת</strong> על יישום החלטות ממשלה ומדיניות הנוגעת לקהילה, לצד פיתוח חוסן אישי וקהילתי — מתוך אמונה שעשייה משותפת, אחריות ציבורית והעצמת צעירים הם המפתח לשינוי אמיתי.
+              </p>
+              <p className="text-foreground font-bold leading-loose text-lg">
+                פיקוח ובקרה על החלטות ממשלה ויישומם בשטח.
               </p>
             </div>
           </div>
@@ -155,6 +163,72 @@ export default function About() {
                 </div>
               </motion.div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Challenges */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              אתגרי <span className="text-secondary">הפורום</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">תהליך הקמת פורום מובילים יחד — מחזון לעשייה</p>
+          </div>
+          {/* Process Flow */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {[
+                { text: "להביא ראיון מוצלח 1 לקהילה ולזכות באמונה", color: "bg-secondary/20 border-secondary/40" },
+                { text: "לחבר אנשים לראיונות משותפים", color: "bg-primary/10 border-primary/30" },
+                { text: "כתיבת תכניות אופרטיביות — וייישומן בשטח", color: "bg-primary/10 border-primary/30" },
+              ].map((item, i) => (
+                <div key={i} className={`rounded-xl border p-4 text-center font-medium text-sm ${item.color}`}>
+                  {item.text}
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {[
+                { text: "ליצור קהילה חזקה מבחינה משפיעה במרחב ציבורי", color: "bg-primary/10 border-primary/30" },
+                { text: "ליצר המשכיות", color: "bg-primary/10 border-primary/30" },
+                { text: "להגדיל את הפורום ולחשוף את הפעילויות", color: "bg-secondary/20 border-secondary/40" },
+              ].map((item, i) => (
+                <div key={i} className={`rounded-xl border p-4 text-center font-medium text-sm ${item.color}`}>
+                  {item.text}
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* Forum Goals */}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">מטרות הפורום</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {[
+                { title: "חזון", icon: "🎯" },
+                { title: "הגדרת מטרות", icon: "📋" },
+                { title: "בחירת שותפים", icon: "🤝" },
+                { title: "השתתפות חברי הפורום", icon: "👥" },
+                { title: "מדיניות הפורום", icon: "📜" },
+                { title: "מדדים", icon: "📊" },
+              ].map((goal, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.07 }}
+                  className="bg-card border border-border rounded-2xl p-4 text-center hover:border-secondary/40 transition-all"
+                >
+                  <div className="text-3xl mb-2">{goal.icon}</div>
+                  <p className="font-bold text-sm text-foreground">{goal.title}</p>
+                </motion.div>
+              ))}
+            </div>
+            <div className="mt-8 bg-primary rounded-2xl p-6 text-center">
+              <p className="text-white font-bold text-xl">להוביל . להשפיע . להצליח</p>
+            </div>
           </div>
         </div>
       </section>
