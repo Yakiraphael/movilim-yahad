@@ -69,7 +69,8 @@ export default function Footer() {
             </div>
             <div className="mt-6 text-sm text-primary-foreground/60 space-y-1">
               <a href={`mailto:${EMAIL}`} className="block hover:text-secondary transition-colors" dir="ltr">{EMAIL}</a>
-              <a href={WHATSAPP_HREF} className="block hover:text-secondary transition-colors" dir="ltr">{PHONE}</a>
+              <a href={WHATSAPP_HREF} className="block hover:text-secondary transition-colors" dir="ltr">וואטסאפ: {PHONE}</a>
+              <a href={`tel:${PHONE.replace(/-/g, "")}`} className="block hover:text-secondary transition-colors" dir="ltr">טלפון: {PHONE}</a>
               <p className="mt-1">שד' ירושלים 18, אשדוד 7752463</p>
             </div>
           </div>
