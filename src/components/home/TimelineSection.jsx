@@ -77,8 +77,9 @@ const timelineItems = [
     subtitle: "מובילים את מנהיגי המחר",
     content: "הקמת תוכנית \"מנהיגות צעירה\" לנוער ברחבי הארץ, פיתוח לובינג פרלמנטרי ייעודי בכנסת, והרחבת תוכניות החוסן המנטלי והזהות הקהילתית כבר מהגיל הרך — כדי להבטיח את הדורות הבאים של מובילים ציוניים ופטריוטיים.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/26b52baf9_FB_IMG_1718701193825.jpg", alt: "קהילה צעירה" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4301f8ad2_generated_image.png", alt: "חזון עתידי - מנהיגות ישראלית" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/418b3bfbd_.jpg", alt: "ישיבת מנהיגות ארצית" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3631a6917_WhatsAppImage2026-05-31at1255391.jpg", alt: "חגיגת הפורום" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d0c7b8cd1_WhatsAppImage2026-05-31at125554.jpg", alt: "ישיבת צוות הפורום" },
     ],
   },
 ];
