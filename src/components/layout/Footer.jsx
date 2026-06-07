@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Linkedin, Instagram, Phone } from "lucide-react";
+import { Facebook, Linkedin, Phone } from "lucide-react";
 import GuideStarBanner from "../shared/GuideStarBanner";
 
 
@@ -18,7 +18,6 @@ const regulatoryLinks = [
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php/?id=100094705007552", label: "פייסבוק" },
-  { icon: Instagram, href: "#", label: "אינסטגרם" },
 ];
 
 const PHONE = "052-509-0179";
