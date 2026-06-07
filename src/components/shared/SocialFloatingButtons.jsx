@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Facebook, Instagram, MessageCircle, Phone, X } from "lucide-react";
+import { Facebook, MessageCircle, Phone, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const buttons = [
@@ -8,12 +8,6 @@ const buttons = [
     icon: Facebook,
     href: "https://www.facebook.com/profile.php/?id=100094705007552",
     bg: "bg-blue-600 hover:bg-blue-700",
-  },
-  {
-    label: "אינסטגרם",
-    icon: Instagram,
-    href: "#",
-    bg: "bg-pink-600 hover:bg-pink-700",
   },
   {
     label: "וואטסאפ",
