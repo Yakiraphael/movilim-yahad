@@ -55,10 +55,9 @@ const timelineItems = [
     subtitle: "צדק חברתי, חוסן קהילתי וערבות הדדית",
     content: "הקמת חמ\"ל סיוע קהילתי וצוותי פעולה להתמודדות עם עוולות חברתיות ומשברים. מפתח ליווי שוטף למשפחות ואוכלוסיות מוחלשות, והשתתפות במאבק הציבורי והתקשורתי הלאומי לחיפוש ואיתור הילדה הנעדרת היימנוט קסאו.",
     images: [
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5b8e0d42_.jpg", alt: "חמ\"ל פורום — תמיכה בלוחמים" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/16baef9f6_.jpg", alt: "לוגו פורום מובילים יחד" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/06621f912_WhatsAppImage2024-04-01at102735.jpg", alt: "כינוס הפורום" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "ישיבה קהילתית" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ac5e4e109_.jpg", alt: "לוגו פורום מובילים יחד" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/6371d54cc_WhatsAppImage2026-05-31at125552.jpg", alt: "חמ\"ל סיוע קהילתי" },
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/34b172afd_WhatsAppImage2026-05-31at125600.jpg", alt: "פעילות קהילתית" },
     ],
   },
   {
