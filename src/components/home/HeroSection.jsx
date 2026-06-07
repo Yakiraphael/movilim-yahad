@@ -51,11 +51,11 @@ export default function HeroSection() {
           className="max-w-3xl">
           
           {/* Logo */}
-          <div className="flex justify-start mb-8">
+          <div className="flex justify-center mb-8">
             <img
               src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/b2d3a44a1_OIP-removebg-preview.png"
               alt="לוגו פורום מובילים יחד"
-              className="h-20 md:h-28 w-auto object-contain drop-shadow-2xl"
+              className="h-32 md:h-44 w-auto object-contain drop-shadow-2xl"
             />
           </div>
 

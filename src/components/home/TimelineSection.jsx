@@ -40,7 +40,7 @@ const timelineItems = [
   },
   {
     year: "2024",
-    title: "סדנאות מנהיגות ופיתוח מקצועי",
+    title: "מנהיגות ופיתוח מקצועי",
     subtitle: "מחזקים כישורים, מעצימים אנשים",
     content: "הפורום מעניק הכשרות מעמיקות בתחומים: ניהול משא ומתן, מיומנויות תקשורת, התמצאות במדיה חברתית, פתרון בעיות וחשיבה אסטרטגית. כל אלה כדי לחזק מתמודדים עתידיים הצומחים מהשטח.",
     images: [
@@ -55,8 +55,8 @@ const timelineItems = [
     subtitle: "צדק חברתי, חוסן קהילתי וערבות הדדית",
     content: "הקמת חמ\"ל סיוע קהילתי וצוותי פעולה להתמודדות עם עוולות חברתיות ומשברים. מפתח ליווי שוטף למשפחות ואוכלוסיות מוחלשות, והשתתפות במאבק הציבורי והתקשורתי הלאומי לחיפוש ואיתור הילדה הנעדרת היימנוט קסאו.",
     images: [
+      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5b8e0d42_.jpg", alt: "חמ\"ל פורום — תמיכה בלוחמים" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/16baef9f6_.jpg", alt: "לוגו פורום מובילים יחד" },
-      { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5b8e0d42_.jpg", alt: "חיילים — תמיכה בלוחמים" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/06621f912_WhatsAppImage2024-04-01at102735.jpg", alt: "כינוס הפורום" },
       { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/53288ea50_FB_IMG_1716453307332.jpg", alt: "ישיבה קהילתית" },
     ],

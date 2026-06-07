@@ -227,33 +227,42 @@ export default function Activities() {
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden border border-border shadow-md">
                 <img
-                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/174d69198_WhatsAppImage2026-05-31at125539.jpg"
-                  alt="תעודת הוקרה לפורום"
+                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c5ae19fd8_WhatsAppImage2026-05-31at125532.jpg"
+                  alt="ישיבת מועמדים מוניציפלית"
                   className="w-full object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="rounded-xl overflow-hidden border border-border shadow-sm">
                   <img
-                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/e5b8e0d42_.jpg"
-                    alt="פרויקט זוכרים ומנצחים"
+                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/93912fb96_222.jpg"
+                    alt="מפגש מועמדים"
                     className="w-full object-cover"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden border border-border shadow-sm">
                   <img
-                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fa6ef5629_WhatsAppImage2026-05-31at125606.jpg"
-                    alt="קמפיין מוניציפלי"
+                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0023150d8_11.jpg"
+                    alt="אירוע הוקרה מוניציפלי"
                     className="w-full object-cover"
                   />
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden border border-border shadow-sm">
-                <img
-                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c4769194c_WhatsAppImage2026-05-31at125605.jpg"
-                  alt="ייעוץ לקמפיין בחירות"
-                  className="w-full object-cover"
-                />
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                  <img
+                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/81181335c_12.jpg"
+                    alt="כנס מועמדים"
+                    className="w-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                  <img
+                    src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/44d475ae7_111.jpg"
+                    alt="ליווי בחירות מוניציפליות"
+                    className="w-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
