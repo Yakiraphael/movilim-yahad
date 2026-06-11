@@ -55,8 +55,8 @@ export default function HeroSection() {
             <img
               src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/b2d3a44a1_OIP-removebg-preview.png"
               alt="לוגו פורום מובילים יחד"
-              className="h-32 md:h-44 w-auto object-contain drop-shadow-2xl"
-            />
+              className="h-32 md:h-44 w-auto object-contain drop-shadow-2xl hidden" />
+            
           </div>
 
           <div className="inline-block bg-black/40 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6 shadow-lg">
