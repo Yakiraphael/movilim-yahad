@@ -148,7 +148,7 @@ export default function ActivitiesSection() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div className="grid grid-cols-1 gap-10 items-start max-w-3xl mx-auto">
             <div className="space-y-6">
               <div className="bg-card border border-border rounded-2xl p-6">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -185,20 +185,6 @@ export default function ActivitiesSection() {
                   <MessageCircle className="w-4 h-4" />
                   יצירת קשר בוואטסאפ
                 </a>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <div className="rounded-2xl overflow-hidden border border-border shadow-md">
-                <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/d81dacf65_Screenshot_20250211_094043_Chrome1.jpg" alt="ועדת כנסת" className="w-full object-cover" />
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
-                  <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/955f85946_SE02-8557-.jpg" alt="קבלת הוקרה" className="w-full object-cover" />
-                </div>
-                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
-                  <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2d6b44775_SE02-8515-.jpg" alt="אירוע הוקרה" className="w-full object-cover" />
-                </div>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const navLinks = [
 { label: "דף הבית", path: "/" },
 { label: "אודותינו", path: "/about" },
 { label: "ההנהגה והצוות", path: "/team" },
-{ label: "פעילויות", path: "/activities" },
+{ label: "גלריה", path: "/activities" },
 { label: "צור קשר", path: "/contact" }];
 
 
@@ -42,11 +42,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0" aria-label="פורום מובילים יחד - דף הבית">
-            <img
-              src={LOGO_URL}
-              alt="לוגו פורום מובילים יחד"
-              className="h-10 md:h-14 w-auto object-contain" />
-            
+            <span className={`font-bold text-lg md:text-xl ${isScrolled ? "text-primary" : "text-white"}`}>
+              פורום מובילים יחד
+            </span>
           </Link>
 
           {/* Desktop Nav */}
