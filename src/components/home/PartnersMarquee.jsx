@@ -49,7 +49,7 @@ export default function PartnersMarquee() {
             className="flex flex-col items-center justify-center gap-3 bg-white rounded-2xl border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 p-6 group">
             
               <div className="flex items-center justify-center h-16">
-                <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/aa96daab8_untitled_WA.jpg"
+                <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0c6f029c5_Logo_Large_101731_du3cv4k.png"
 
               alt={partner.name}
               className="max-h-16 max-w-[120px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
