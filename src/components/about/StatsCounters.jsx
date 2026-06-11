@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 
 const stats = [
-  { value: 47, suffix: "+", label: "בוגרים שולבו בתפקידים ציבוריים" },
-  { value: 320, suffix: "+", label: "משפחות נתמכו בחמ\"ל הקהילתי" },
-  { value: 85, suffix: "", label: "הופעות בתקשורת הארצית" },
-  { value: 12, suffix: "M₪", label: "תקציבים קהילתיים שהוקצו" },
+  { value: 18, suffix: "", label: "פעילים חברתיים בפורום" },
+  { value: 85, suffix: "", label: "מפגשי דיון" },
+  { value: 14, suffix: "", label: "נציגויות בערים שונות" },
+  { value: 17, suffix: "", label: "תמיכה ופעילות קהילתית חברתית" },
 ];
 
 function Counter({ target, suffix }) {
