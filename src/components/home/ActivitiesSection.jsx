@@ -130,7 +130,7 @@ export default function ActivitiesSection() {
                   <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/93912fb96_222.jpg" alt="מפגש מועמדים" className="w-full object-cover" />
                 </div>
                 <div className="rounded-xl overflow-hidden border border-border shadow-sm">
-                  <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0023150d8_11.jpg" alt="אירוע הוקרה מוניציפלי" className="w-full object-cover" />
+                  <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/5efa14c52_WhatsAppImage2026-05-31at1256041.jpg" alt="אירוע הוקרה מוניציפלי" className="w-full object-cover" />
                 </div>
               </div>
               <div className="rounded-xl overflow-hidden border border-border shadow-sm">
