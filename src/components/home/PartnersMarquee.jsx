@@ -11,7 +11,7 @@ const partners = [
   },
   {
     name: "המכון הישראלי לדמוקרטיה",
-    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/5990169dd_logo-newer.svg",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0c6f029c5_Logo_Large_101731_du3cv4k.png",
   },
   {
     name: "הקרן החדשה לישראל",
@@ -23,15 +23,15 @@ const partners = [
   },
   {
     name: "הסוכנות היהודית",
-    logo: "https://upload.wikimedia.org/wikipedia/he/thumb/4/47/Jewish_Agency_for_Israel_logo.svg/200px-Jewish_Agency_for_Israel_logo.svg.png",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/aa96daab8_untitled_WA.jpg",
   },
   {
     name: "קרן קרב",
-    logo: "https://www.kerenkarev.org.il/wp-content/uploads/2020/10/logo.png",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3e704e039_R.jpg",
   },
   {
     name: "משרד ראש הממשלה",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Emblem_of_Israel.svg/120px-Emblem_of_Israel.svg.png",
+    logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/36c806d4c_-120-90-01-1.png",
   },
 ];
 
