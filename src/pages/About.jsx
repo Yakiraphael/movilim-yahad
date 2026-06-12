@@ -4,126 +4,126 @@ import { Target, Eye, Shield, Users, BookOpen, Mic, Star, Flag, Landmark, HeartH
 import StatsCounters from "../components/about/StatsCounters";
 
 const values = [
-  {
-    icon: Target,
-    title: "חזון",
-    text: "יצירת דור חדש של מנהיגים ומנהיגות מבני הקהילה האתיופית-ישראלית, אשר ישפיעו על עיצוב המדיניות הציבורית וייצגו את הקהילה בכבוד ובמקצועיות. הפורום פועל לקידום מנהיגות יוזמת מהשטח ובעתיד — בית ספר למנהיגות."
-  },
-  {
-    icon: Shield,
-    title: "ציונות ופטריוטיות",
-    text: "הפורום פועל מתוך מחויבות עמוקה למדינת ישראל ולערכיה. אנו מאמינים שייצוג הולם של כלל שכבות החברה הוא נדבך חיוני בבניין הלאום. הקהילה האתיופית-ישראלית היא חלק בלתי נפרד מהחברה הישראלית ומהמפעל הציוני."
-  },
-  {
-    icon: Users,
-    title: "ערבות הדדית",
-    text: "אנו מאמינים שהשינוי מתחיל מבפנים — חיזוק הקהילה דרך ליווי אישי, תמיכה נפשית ובניית רשתות מקצועיות. המועמד הרוצה להשתלב בחיים הציבוריים יקבל את כל הכלים הנדרשים מקבוצה איכותית המורכבת מכל חלקי הארץ."
-  },
-  {
-    icon: Eye,
-    title: "שקיפות",
-    text: "העמותה פועלת מתוך שקיפות מלאה, עם דיווח שוטף לציבור, עמידה בדרישות הרגולציה הישראלית ושמירה על סטנדרטים הגבוהים ביותר של ניהול תקין."
-  },
-  {
-    icon: BookOpen,
-    title: "פיתוח מנהיגות",
-    text: "הפורום מעניק הכשרות בניהול משא ומתן, מיומנויות תקשורתיות, התמצאות במדיה החברתית, פתרון בעיות וחשיבה מחוץ לקופסה — מתוך ראייה אסטרטגית לחיזוק מתמודדים עתידיים."
-  },
-  {
-    icon: Mic,
-    title: "שינוי הנרטיב",
-    text: "נוכחות תקשורתית אקטיבית, ניטור מדיניות ממשלתית, וקידום סיפורי הצלחה. הפורום פועל לשנות את האופן שבו החברה הישראלית תופסת את הקהילה האתיופית ואת תרומתה."
-  }
-];
+{
+  icon: Target,
+  title: "חזון",
+  text: "יצירת דור חדש של מנהיגים ומנהיגות מבני הקהילה האתיופית-ישראלית, אשר ישפיעו על עיצוב המדיניות הציבורית וייצגו את הקהילה בכבוד ובמקצועיות. הפורום פועל לקידום מנהיגות יוזמת מהשטח ובעתיד — בית ספר למנהיגות."
+},
+{
+  icon: Shield,
+  title: "ציונות ופטריוטיות",
+  text: "הפורום פועל מתוך מחויבות עמוקה למדינת ישראל ולערכיה. אנו מאמינים שייצוג הולם של כלל שכבות החברה הוא נדבך חיוני בבניין הלאום. הקהילה האתיופית-ישראלית היא חלק בלתי נפרד מהחברה הישראלית ומהמפעל הציוני."
+},
+{
+  icon: Users,
+  title: "ערבות הדדית",
+  text: "אנו מאמינים שהשינוי מתחיל מבפנים — חיזוק הקהילה דרך ליווי אישי, תמיכה נפשית ובניית רשתות מקצועיות. המועמד הרוצה להשתלב בחיים הציבוריים יקבל את כל הכלים הנדרשים מקבוצה איכותית המורכבת מכל חלקי הארץ."
+},
+{
+  icon: Eye,
+  title: "שקיפות",
+  text: "העמותה פועלת מתוך שקיפות מלאה, עם דיווח שוטף לציבור, עמידה בדרישות הרגולציה הישראלית ושמירה על סטנדרטים הגבוהים ביותר של ניהול תקין."
+},
+{
+  icon: BookOpen,
+  title: "פיתוח מנהיגות",
+  text: "הפורום מעניק הכשרות בניהול משא ומתן, מיומנויות תקשורתיות, התמצאות במדיה החברתית, פתרון בעיות וחשיבה מחוץ לקופסה — מתוך ראייה אסטרטגית לחיזוק מתמודדים עתידיים."
+},
+{
+  icon: Mic,
+  title: "שינוי הנרטיב",
+  text: "נוכחות תקשורתית אקטיבית, ניטור מדיניות ממשלתית, וקידום סיפורי הצלחה. הפורום פועל לשנות את האופן שבו החברה הישראלית תופסת את הקהילה האתיופית ואת תרומתה."
+}];
+
 
 const challenges = [
-  {
-    icon: TrendingUp,
-    title: "תת-ייצוג במוקדי השפעה",
-    text: "למרות ההתקדמות בשנים האחרונות, מספרם של יוצאי אתיופיה בתפקידי הנהגה בכירים, בזירה הציבורית והפוליטית, עדיין נמוך ביחס לחלקם באוכלוסייה."
-  },
-  {
-    icon: AlertTriangle,
-    title: "היעדר רצף מנהיגותי",
-    text: "חוסר במנגנון מסודר המאתר, מכשיר ומלווה דור חדש של מנהיגים צעירים לאורך זמן, באופן שיבטיח המשכיות והשפעה ארוכת טווח."
-  },
-  {
-    icon: Network,
-    title: "פערי נגישות לרשתות השפעה",
-    text: "צעירים רבים חסרים קשרים מקצועיים, מנטורים ופלטפורמות שיאפשרו להם להגיע לעמדות מפתח ולהשתלב במעגלי קבלת ההחלטות."
-  },
-  {
-    icon: MessageSquareWarning,
-    title: "סטריאוטיפים ודעות קדומות",
-    text: "התמודדות עם תפיסות מוטעות, דעות קדומות וסיקור תקשורתי שאינו תמיד מאוזן, המשפיעים על הזדמנויות הקידום ועל תחושת השייכות של צעירים בקהילה."
-  },
-  {
-    icon: Shuffle,
-    title: "פיצול בין ארגונים ויוזמות",
-    text: "ריבוי גופים הפועלים למען מטרות דומות ללא תיאום מספק, דבר שעלול להוביל לפיזור משאבים, כפילויות וחוסר מיקוד בהשגת יעדים משותפים."
-  },
-  {
-    icon: Siren,
-    title: "התמודדות עם משברים חברתיים וקהילתיים",
-    text: "אירועי אפליה, גזענות, משברי אמון מול מוסדות המדינה וקשיים חברתיים מחייבים תגובה מקצועית, מהירה ומאורגנת לצד בניית חוסן קהילתי ארוך טווח."
-  }
-];
+{
+  icon: TrendingUp,
+  title: "תת-ייצוג במוקדי השפעה",
+  text: "למרות ההתקדמות בשנים האחרונות, מספרם של יוצאי אתיופיה בתפקידי הנהגה בכירים, בזירה הציבורית והפוליטית, עדיין נמוך ביחס לחלקם באוכלוסייה."
+},
+{
+  icon: AlertTriangle,
+  title: "היעדר רצף מנהיגותי",
+  text: "חוסר במנגנון מסודר המאתר, מכשיר ומלווה דור חדש של מנהיגים צעירים לאורך זמן, באופן שיבטיח המשכיות והשפעה ארוכת טווח."
+},
+{
+  icon: Network,
+  title: "פערי נגישות לרשתות השפעה",
+  text: "צעירים רבים חסרים קשרים מקצועיים, מנטורים ופלטפורמות שיאפשרו להם להגיע לעמדות מפתח ולהשתלב במעגלי קבלת ההחלטות."
+},
+{
+  icon: MessageSquareWarning,
+  title: "סטריאוטיפים ודעות קדומות",
+  text: "התמודדות עם תפיסות מוטעות, דעות קדומות וסיקור תקשורתי שאינו תמיד מאוזן, המשפיעים על הזדמנויות הקידום ועל תחושת השייכות של צעירים בקהילה."
+},
+{
+  icon: Shuffle,
+  title: "פיצול בין ארגונים ויוזמות",
+  text: "ריבוי גופים הפועלים למען מטרות דומות ללא תיאום מספק, דבר שעלול להוביל לפיזור משאבים, כפילויות וחוסר מיקוד בהשגת יעדים משותפים."
+},
+{
+  icon: Siren,
+  title: "התמודדות עם משברים חברתיים וקהילתיים",
+  text: "אירועי אפליה, גזענות, משברי אמון מול מוסדות המדינה וקשיים חברתיים מחייבים תגובה מקצועית, מהירה ומאורגנת לצד בניית חוסן קהילתי ארוך טווח."
+}];
+
 
 const forumGoals = [
-  {
-    icon: GraduationCap,
-    title: "פיתוח והצמחת דור מנהיגות צעיר",
-    text: "איתור, הכשרה וליווי של צעירים וצעירות יוצאי אתיופיה בעלי פוטנציאל מנהיגותי, במטרה לשלבם בתפקידי השפעה במגזר הציבורי, הפוליטי, העסקי והחברתי."
-  },
-  {
-    icon: Landmark,
-    title: "הגדלת הייצוג במוקדי קבלת החלטות",
-    text: "קידום מועמדים לתפקידים בכירים ברשויות המקומיות, במשרדי הממשלה, בכנסת, במגזר הציבורי ובארגונים מרכזיים, תוך יצירת מסלולי קידום והזדמנויות שוות."
-  },
-  {
-    icon: Mic,
-    title: "שינוי השיח הציבורי והנרטיב החברתי",
-    text: "הובלת פעילות הסברה, תקשורת ורשתות חברתיות במטרה לחזק את תדמיתם של יוצאי אתיופיה, להציג סיפורי הצלחה ולהשפיע על דעת הקהל הישראלית."
-  },
-  {
-    icon: ScanSearch,
-    title: "פיקוח ובקרה על מדיניות ותקציבים",
-    text: "מעקב אחר החלטות ממשלה, תקציבים ותכניות ייעודיות, תוך קידום שקיפות, בקרה ציבורית ווידוא שהמשאבים מגיעים ליעדם ומשיגים את מטרותיהם."
-  },
-  {
-    icon: Users,
-    title: "יצירת כוח אזרחי-ציבורי מאוחד",
-    text: "חיבור בין פעילים חברתיים, אנשי מקצוע, אקדמאים, מנהלים, יזמים ואנשי ציבור מכל רחבי הארץ, ליצירת רשת השפעה ארצית הפועלת מתוך שותפות וערבות הדדית."
-  },
-  {
-    icon: Flag,
-    title: "קידום יוזמות חברתיות וחקיקה",
-    text: "הקמת מערך מקצועי הכולל ייעוץ משפטי, כלכלי ולובינג ציבורי, במטרה לקדם חקיקה, מדיניות ויוזמות חברתיות שישפרו את מצבה של הקהילה והחברה הישראלית כולה."
-  }
-];
+{
+  icon: GraduationCap,
+  title: "פיתוח והצמחת דור מנהיגות צעיר",
+  text: "איתור, הכשרה וליווי של צעירים וצעירות יוצאי אתיופיה בעלי פוטנציאל מנהיגותי, במטרה לשלבם בתפקידי השפעה במגזר הציבורי, הפוליטי, העסקי והחברתי."
+},
+{
+  icon: Landmark,
+  title: "הגדלת הייצוג במוקדי קבלת החלטות",
+  text: "קידום מועמדים לתפקידים בכירים ברשויות המקומיות, במשרדי הממשלה, בכנסת, במגזר הציבורי ובארגונים מרכזיים, תוך יצירת מסלולי קידום והזדמנויות שוות."
+},
+{
+  icon: Mic,
+  title: "שינוי השיח הציבורי והנרטיב החברתי",
+  text: "הובלת פעילות הסברה, תקשורת ורשתות חברתיות במטרה לחזק את תדמיתם של יוצאי אתיופיה, להציג סיפורי הצלחה ולהשפיע על דעת הקהל הישראלית."
+},
+{
+  icon: ScanSearch,
+  title: "פיקוח ובקרה על מדיניות ותקציבים",
+  text: "מעקב אחר החלטות ממשלה, תקציבים ותכניות ייעודיות, תוך קידום שקיפות, בקרה ציבורית ווידוא שהמשאבים מגיעים ליעדם ומשיגים את מטרותיהם."
+},
+{
+  icon: Users,
+  title: "יצירת כוח אזרחי-ציבורי מאוחד",
+  text: "חיבור בין פעילים חברתיים, אנשי מקצוע, אקדמאים, מנהלים, יזמים ואנשי ציבור מכל רחבי הארץ, ליצירת רשת השפעה ארצית הפועלת מתוך שותפות וערבות הדדית."
+},
+{
+  icon: Flag,
+  title: "קידום יוזמות חברתיות וחקיקה",
+  text: "הקמת מערך מקצועי הכולל ייעוץ משפטי, כלכלי ולובינג ציבורי, במטרה לקדם חקיקה, מדיניות ויוזמות חברתיות שישפרו את מצבה של הקהילה והחברה הישראלית כולה."
+}];
+
 
 const programs = [
-  {
-    icon: Star,
-    title: 'תוכנית הכשרת מנהיגות יישובית עירונית',
-    description: 'הכשרה ייעודית לפעילים ופעילות במרחב הציבורי — הכשרה יישובית עירונית המקנה כלים מעשיים בניהול, תקשורת, קבלת החלטות ויכולת השפעה מוניציפלית וקהילתית.'
-  },
-  {
-    icon: Users,
-    title: "חמ\"ל קהילתי",
-    description: "מרכז מבצעי לסיוע קהילתי המלווה משפחות ואוכלוסיות מוחלשות, ונאבק עבור צדק חברתי."
-  },
-  {
-    icon: Target,
-    title: "לובינג פרלמנטרי",
-    description: "פיקוח מקצועי על ועדות הכנסת, הגשת עמדות ומסמכי מדיניות, וייצוג אינטרסים הקהילה בזירה הלאומית. ליווי, ייעוץ ותמיכה למועמדים מתוכנו במרחב הציבורי המקומי והארצי. הארגון עוקב אחר החלטות ממשלה, מבקר ומפקח על ייעודן והניוד שלהן למשרדים השונים, לארגונים, עמותות והמגזר הפרטי הקשורים לקהילה."
-  },
-  {
-    icon: BookOpen,
-    title: "התערבות חינוכית",
-    description: "כתיבת אמנה חברתית למניעת חרמות מכלל הגילאים והמינים — יצירת נורמה חברתית מחייבת המקדמת שיח כבוד, הכלה ואחריות הדדית בין כלל חברי הקהילה."
-  }
-];
+{
+  icon: Star,
+  title: 'תוכנית הכשרת מנהיגות יישובית עירונית',
+  description: 'הכשרה ייעודית לפעילים ופעילות במרחב הציבורי — הכשרה יישובית עירונית המקנה כלים מעשיים בניהול, תקשורת, קבלת החלטות ויכולת השפעה מוניציפלית וקהילתית.'
+},
+{
+  icon: Users,
+  title: "חמ\"ל קהילתי",
+  description: "מרכז מבצעי לסיוע קהילתי המלווה משפחות ואוכלוסיות מוחלשות, ונאבק עבור צדק חברתי."
+},
+{
+  icon: Target,
+  title: "לובינג פרלמנטרי",
+  description: "פיקוח מקצועי על ועדות הכנסת, הגשת עמדות ומסמכי מדיניות, וייצוג אינטרסים הקהילה בזירה הלאומית. ליווי, ייעוץ ותמיכה למועמדים מתוכנו במרחב הציבורי המקומי והארצי. הארגון עוקב אחר החלטות ממשלה, מבקר ומפקח על ייעודן והניוד שלהן למשרדים השונים, לארגונים, עמותות והמגזר הפרטי הקשורים לקהילה."
+},
+{
+  icon: BookOpen,
+  title: "התערבות חינוכית",
+  description: "כתיבת אמנה חברתית למניעת חרמות מכלל הגילאים והמינים — יצירת נורמה חברתית מחייבת המקדמת שיח כבוד, הכלה ואחריות הדדית בין כלל חברי הקהילה."
+}];
+
 
 export default function About() {
   return (
@@ -139,8 +139,8 @@ export default function About() {
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
               אודות <span className="text-secondary">הפורום</span>
             </h1>
-            <p className="text-lg text-primary-foreground/80 leading-relaxed">
-              בשנת 2022 החלה פעילותה של פורום מובילים יחד מתוך קבוצה קטנה של צעירים ואנשי עשייה שהאמינו בכוחם של אחדות, שותפות ועבודה משותפת. מתוך תחושת שליחות, הוקמה בשנת 2024 עמותת פורום מובילים יחד (ע"ר 580795821) — ומאז פועל הפורום להצמיח דור חדש של מנהיגים ציבוריים מהשטח.
+            <p className="text-lg text-primary-foreground/80 leading-relaxed">בשנת 2022 החלה פעילותה של פורום מובילים יחד מתוך אמונה בדור של צעירים ואנשי עשייה שהאמינו בכוחם של אחדות, שותפות ועבודה משותפת. מתוך תחושת שליחות, הוקמה בשנת 2024 עמותת פורום מובילים יחד (ע"ר 580795821) — ומאז פועל הפורום להצמיח דור חדש של מנהיגים ציבוריים מהשטח.
+
             </p>
           </motion.div>
         </div>
@@ -205,14 +205,14 @@ export default function About() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map((val, i) => (
-              <motion.div
-                key={val.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 transition-all duration-300">
+            {values.map((val, i) =>
+            <motion.div
+              key={val.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 transition-all duration-300">
                 <div className="w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-1">
                   <val.icon className="w-5 h-5 text-secondary" />
                 </div>
@@ -221,7 +221,7 @@ export default function About() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{val.text}</p>
                 </div>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -235,14 +235,14 @@ export default function About() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {challenges.map((challenge, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 transition-all duration-300">
+            {challenges.map((challenge, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 transition-all duration-300">
                 <div className="w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-1">
                   <challenge.icon className="w-5 h-5 text-secondary" />
                 </div>
@@ -251,7 +251,7 @@ export default function About() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{challenge.text}</p>
                 </div>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -265,14 +265,14 @@ export default function About() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {forumGoals.map((goal, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 transition-all duration-300">
+            {forumGoals.map((goal, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 transition-all duration-300">
                 <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
                   <goal.icon className="w-5 h-5 text-primary" />
                 </div>
@@ -281,7 +281,7 @@ export default function About() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{goal.text}</p>
                 </div>
               </motion.div>
-            ))}
+            )}
           </div>
           <div className="mt-10 bg-primary rounded-2xl p-6 text-center max-w-5xl mx-auto">
             <p className="text-white font-bold text-xl">להוביל . להשפיע . להצליח</p>
@@ -298,24 +298,24 @@ export default function About() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {programs.map((prog, i) => (
-              <motion.div
-                key={prog.title}
-                initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-primary rounded-2xl p-6 text-primary-foreground">
+            {programs.map((prog, i) =>
+            <motion.div
+              key={prog.title}
+              initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-primary rounded-2xl p-6 text-primary-foreground">
                 <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
                   <prog.icon className="w-6 h-6 text-secondary" />
                 </div>
                 <h3 className="text-lg font-bold mb-2">{prog.title}</h3>
                 <p className="text-primary-foreground/70 text-sm leading-relaxed">{prog.description}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
