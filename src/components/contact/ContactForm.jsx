@@ -9,10 +9,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { base44 } from "@/api/base44Client";
 
 const contactReasons = [
-  { value: "program", label: "הגשת מועמדות לתוכנית" },
-  { value: "employers", label: "פניות למעסיקים" },
-  { value: "donations", label: "תרומות ותמיכה" },
-  { value: "media", label: "תקשורת ודוברות" },
+  { value: "program_municipal", label: "הגשת מועמדות – תוכנית ליווי מוניציפלית" },
+  { value: "program_national", label: "הגשת מועמדות – תוכנית ליווי ארצית (כנסת)" },
+  { value: "leadership_training", label: "הכשרת מנהיגות – הצטרפות לתוכנית" },
+  { value: "community_activity", label: "פעילות קהילתית ושותפות מקומית" },
+  { value: "parliamentary_lobbying", label: "לובינג פרלמנטרי ומעקב מדיניות" },
+  { value: "community_hotline", label: "חמ\"ל קהילתי – בקשת סיוע" },
+  { value: "partnership", label: "שיתוף פעולה ושותפות אסטרטגית" },
+  { value: "donations", label: "תרומות ותמיכה כספית" },
+  { value: "media", label: "תקשורת, דוברות ופרסום" },
+  { value: "volunteer", label: "התנדבות ופעילות שטח" },
+  { value: "educational", label: "תוכנית חינוכית ומניעת חרמות" },
+  { value: "employers", label: "פניות ממעסיקים ומגייסים" },
   { value: "other", label: "אחר" },
 ];
 
@@ -138,7 +146,7 @@ ${cvUrl ? `קורות חיים: ${cvUrl}` : ""}
 
       {/* Dynamic CV upload for program applicants */}
       <AnimatePresence>
-        {formData.reason === "program" && (
+        {(formData.reason === "program_municipal" || formData.reason === "program_national") && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}

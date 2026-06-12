@@ -46,16 +46,12 @@ export default function PartnersMarquee() {
           {partners.map((partner, i) =>
           <div
             key={i}
-            className="flex flex-col items-center justify-center gap-3 bg-white rounded-2xl border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 p-6 group">
-            
-              <div className="flex items-center justify-center h-16">
-                <img src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0c6f029c5_Logo_Large_101731_du3cv4k.png"
-
-              alt={partner.name}
-              className="max-h-16 max-w-[120px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-              
-              </div>
-              <p className="text-xs text-center text-muted-foreground font-medium">{partner.name}</p>
+            className="flex items-center justify-center bg-white rounded-2xl border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 p-6 group">
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className="max-h-16 max-w-[130px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
             </div>
           )}
         </div>

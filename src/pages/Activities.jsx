@@ -62,6 +62,17 @@ const allPhotos = [
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fb183fff4_245A3168.jpg", alt: "סדנת מנהיגות" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/955f85946_SE02-8557-.jpg", alt: "קבלת הוקרה" },
   { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2d6b44775_SE02-8515-.jpg", alt: "אירוע הוקרה" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/dbc83cb28_WhatsAppImage2026-06-12at075918.jpeg", alt: "כנסת ישראל" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fa4c9c207_WhatsAppImage2026-06-12at0813031.jpg", alt: "ישיבת פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/7a5f7179d_WhatsAppImage2026-06-12at0813032.jpg", alt: "ישיבת פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/24775a9f7_WhatsAppImage2026-06-12at0813033.jpg", alt: "מפגש פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/50ff9cbb9_WhatsAppImage2026-06-12at0813034.jpg", alt: "ישיבת מנהיגות" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ea188f8bd_WhatsAppImage2026-06-12at0813035.jpg", alt: "אירוע פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/fc45d9d05_WhatsAppImage2026-06-12at0813036.jpg", alt: "מפגש שטח" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/5e1e29e6d_WhatsAppImage2026-06-12at0813037.jpg", alt: "ישיבת פורום" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/c7b040b36_WhatsAppImage2026-06-12at081303.jpg", alt: "מפגש מנהיגות" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2ef5bce25_-.jpeg", alt: "פעילות ארצית" },
+  { url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/42aadc075_.jpeg", alt: "אירוע פורום" },
 ];
 
 export default function Activities() {

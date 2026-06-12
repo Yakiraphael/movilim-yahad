@@ -151,7 +151,7 @@ export default function ActivitiesSection() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 items-start max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="space-y-6">
               <div className="bg-card border border-border rounded-2xl p-6">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -188,6 +188,24 @@ export default function ActivitiesSection() {
                   <MessageCircle className="w-4 h-4" />
                   יצירת קשר בוואטסאפ
                 </a>
+              </div>
+            </div>
+
+            {/* National Images */}
+            <div className="space-y-4">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-md">
+                <img
+                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/dbc83cb28_WhatsAppImage2026-06-12at075918.jpeg"
+                  alt="כנסת ישראל"
+                  className="w-full object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                <img
+                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/2ef5bce25_-.jpeg"
+                  alt="פעילות ארצית - פורום מובילים יחד"
+                  className="w-full object-cover"
+                />
               </div>
             </div>
           </div>
