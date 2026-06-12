@@ -194,10 +194,10 @@ export default function ActivitiesSection() {
             {/* National Images */}
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden border border-border shadow-md">
-                <img
-                  src="https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/dbc83cb28_WhatsAppImage2026-06-12at075918.jpeg"
-                  alt="כנסת ישראל"
-                  className="w-full object-cover hidden" />
+                
+
+
+                
                 
               </div>
               <div className="rounded-xl overflow-hidden border border-border shadow-sm">
