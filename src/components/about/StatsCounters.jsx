@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 
 const stats = [
   { value: 18, suffix: "", label: "פעילים חברתיים בפורום" },
-  { value: 85, suffix: "", label: "מפגשי דיון" },
+  { value: 48, suffix: "", label: "מפגשי דיון" },
   { value: 14, suffix: "", label: "נציגויות בערים שונות" },
   { value: 17, suffix: "", label: "תמיכה ופעילות קהילתית חברתית" },
 ];
