@@ -147,7 +147,7 @@ export default function ActivitiesSection() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
               פעילות ארצית – מנהיגות לכנסת ישראל{" "}
-              <span className="text-secondary text-2xl">(בהקמה)</span>
+              <span className="text-secondary text-2xl hidden">(בהקמה)</span>
             </h2>
           </div>
 
