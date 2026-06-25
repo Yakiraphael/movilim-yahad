@@ -73,7 +73,7 @@ export default function PillarsSection() {
                 <p className="text-muted-foreground leading-relaxed text-sm mb-4">{pillar.description}</p>
 
                 <div className="mt-auto">
-                  <p className="text-sm font-bold text-foreground mb-2 hidden">במסגרת זו יפעל הפורום ל:</p>
+                  
                   <ul className="space-y-1.5">
                     {pillar.items.map((item, i) =>
                   <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground hidden">
