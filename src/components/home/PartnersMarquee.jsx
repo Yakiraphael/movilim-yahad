@@ -11,7 +11,7 @@ const partners = [
 },
 {
   name: "המכון הישראלי לדמוקרטיה",
-  logo: "https://www.idi.org.il/media/14973/idi_logo.png"
+  logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/61a08e131_OIP.webp"
 },
 {
   name: "הקרן החדשה לישראל",
@@ -48,10 +48,10 @@ export default function PartnersMarquee() {
             key={i}
             className="flex items-center justify-center bg-white rounded-2xl border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 p-6 group">
               <img
-                src={partner.logo}
-                alt={partner.name}
-                className="max-h-16 max-w-[130px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
+              src={partner.logo}
+              alt={partner.name}
+              className="max-h-16 max-w-[130px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+            
             </div>
           )}
         </div>
