@@ -102,27 +102,24 @@ const forumGoals = [
 }];
 
 
-const programs = [
-{
-  icon: Star,
-  title: 'תוכנית הכשרת מנהיגות יישובית עירונית',
-  description: 'הכשרה ייעודית לפעילים ופעילות במרחב הציבורי — הכשרה יישובית עירונית המקנה כלים מעשיים בניהול, תקשורת, קבלת החלטות ויכולת השפעה מוניציפלית וקהילתית.'
-},
-{
-  icon: Users,
-  title: "חמ\"ל קהילתי",
-  description: "מרכז מבצעי לסיוע קהילתי המלווה משפחות ואוכלוסיות מוחלשות, ונאבק עבור צדק חברתי."
-},
-{
-  icon: Target,
-  title: "לובינג פרלמנטרי",
-  description: "פיקוח מקצועי על ועדות הכנסת, הגשת עמדות ומסמכי מדיניות, וייצוג אינטרסים הקהילה בזירה הלאומית. ליווי, ייעוץ ותמיכה למועמדים מתוכנו במרחב הציבורי המקומי והארצי. הארגון עוקב אחר החלטות ממשלה, מבקר ומפקח על ייעודן והניוד שלהן למשרדים השונים, לארגונים, עמותות והמגזר הפרטי הקשורים לקהילה."
-},
-{
-  icon: BookOpen,
-  title: "התערבות חינוכית",
-  description: "כתיבת אמנה חברתית למניעת חרמות מכלל הגילאים והמינים — יצירת נורמה חברתית מחייבת המקדמת שיח כבוד, הכלה ואחריות הדדית בין כלל חברי הקהילה."
-}];
+const programImages = [
+  {
+    url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/f14ec177a_WhatsAppImage2026-06-24at092438.jpg",
+    alt: "תוכנית הכשרת מנהיגות יישובית עירונית"
+  },
+  {
+    url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/a2357edbf_WhatsAppImage2026-06-24at0924381.jpg",
+    alt: "חמ\"ל קהילתי"
+  },
+  {
+    url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3f84a836b_WhatsAppImage2026-06-24at092439.jpg",
+    alt: "התערבות חינוכית"
+  },
+  {
+    url: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/4038d58d5_WhatsAppImage2026-06-24at0924391.jpg",
+    alt: "לובינג פרלמנטרי"
+  },
+];
 
 
 export default function About() {
@@ -292,25 +289,21 @@ export default function About() {
       {/* Programs */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               תוכניות <span className="text-secondary">ופעילויות</span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {programs.map((prog, i) =>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {programImages.map((img, i) =>
             <motion.div
-              key={prog.title}
-              initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-primary rounded-2xl p-6 text-primary-foreground">
-                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
-                  <prog.icon className="w-6 h-6 text-secondary" />
-                </div>
-                <h3 className="text-lg font-bold mb-2">{prog.title}</h3>
-                <p className="text-primary-foreground/70 text-sm leading-relaxed">{prog.description}</p>
+              transition={{ delay: i * 0.08 }}
+              className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <img src={img.url} alt={img.alt} className="w-full h-auto object-contain" />
               </motion.div>
             )}
           </div>
