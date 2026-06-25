@@ -11,7 +11,7 @@ const partners = [
 },
 {
   name: "המכון הישראלי לדמוקרטיה",
-  logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/0c6f029c5_Logo_Large_101731_du3cv4k.png"
+  logo: "https://www.idi.org.il/media/14973/idi_logo.png"
 },
 {
   name: "הקרן החדשה לישראל",
