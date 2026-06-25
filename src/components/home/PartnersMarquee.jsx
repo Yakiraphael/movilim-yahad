@@ -27,7 +27,7 @@ const partners = [
 },
 {
   name: "קרן קרב",
-  logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/3e704e039_R.jpg"
+  logo: "https://media.base44.com/images/public/6a0ee0cfd572440ff8443041/ce9529254_logo_white.png"
 },
 {
   name: "משרד ראש הממשלה",
